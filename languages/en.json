@@ -1,0 +1,10 @@
+{
+    "smws": {
+        "lang": "en"
+    },
+    "links": {
+        "aboutMe": "About me",
+        "myWork": "My work",
+        "contact": "Contact"
+    }
+}

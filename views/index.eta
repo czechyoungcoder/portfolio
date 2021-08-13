@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang=<%= it.smws.lang %>>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jakub | Web Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div>
+    <p><%= it.hello %></p> 
+    <header class="header">
+        <ul class="header__list">
+            <li><a href="#" class="header__link"><%= it.links.aboutMe %></a></li>
+            <li><a href="#" class="header__link"><%= it.links.myWork %></a></li>
+            <li><a href="#" class="header__link"><%= it.links.contact %></a></li>
+            <li><a href="#" class="header__link"><%= it.links.contact %></a></li>
+        </ul>
+        <form class="header__lang-form" action="/<%= it.smws.lang %>/language" method="post">
+            <button class="en-button" type="submit" name="lang" value="en">EN</button>
+            <span>/</span>
+            <button class="cs-button" type="submit" name="lang" value="cs">CS</button>
+        </form>
+    </header>
+</div>
+<div>
+</div>
+</body>
+</html>
