@@ -28,7 +28,6 @@ app.get('/', function (req, res) {
   smws.run(req, res, {
       page: 'index'
   });
-
 });
 
 app.get('/:lang', function (req, res) {
@@ -36,7 +35,6 @@ app.get('/:lang', function (req, res) {
   smws.run(req, res, {
       page: 'index'
   });
-
 });
 
 app.listen(process.env.PORT || 3000, () => {

@@ -1,13 +1,19 @@
 // font
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  color: white;
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+nav, ul, li {
+  margin: 0;
 }
 
 body {
@@ -17,6 +23,10 @@ body {
   line-height: 1.6;
   min-height: 600vh;
   font-family: 'Poppins', sans-serif;
+  background: $body-background;
+}
 
-  background: no-repeat linear-gradient(170deg, #110C1D, #210A4E);
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
 }
