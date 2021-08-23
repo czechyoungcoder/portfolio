@@ -1,11 +1,28 @@
 .hero {
   text-align: center;
+
+  @include breakpoint-up(large) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
   &__logo {
     margin-bottom: 3rem;
+
+    @include breakpoint-up(large) {
+     margin: 0;
+    }
   }
 
   &__text {
     line-height: 1.3;
+
+    @include breakpoint-up(large) {
+      padding-top: 3rem;
+      margin-left: 4rem;
+    }
     
     & > * {
       display: table;
