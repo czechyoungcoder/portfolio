@@ -9,30 +9,47 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-        <header class="header">
-            <nav class="header__nav container">
-                <div class="header__name"><span class="first">JAKUB</span><span class="last">PODSKALSKÝ</span></div>
-                <form class="header__lang-form" action="/<%= it.smws.lang %>/language" method="post">
-                    <button class="en-button <%= it.smws.lang == 'en' ? 'active' : '' %>" type="submit" name="lang" value="en">EN</button>
-                    <span>/</span>
-                    <button class="cs-button <%= it.smws.lang == 'cs' ? 'active' : '' %>" type="submit" name="lang" value="cs">CS</button>
-                </form>
-                <div class="nav-menu"><span></span><span></span><span></span><span></span></div>
-                <ul class="header__list">
-                    <li class="header__item"><a href="#" class="header__link"><%= it.links.aboutMe %></a></li>
-                    <li class="header__item"><a href="#" class="header__link"><%= it.links.myWork %></a></li>
-                    <li class="header__item"><a href="#" class="header__link"><%= it.links.contact %></a></li>
-                </ul>
+    <header class="header">
+        <nav class="header__nav container">
+            <div class="header__name"><span class="first">JAKUB</span><span class="last">PODSKALSKÝ</span></div>
+            <form class="header__lang-form" action="/<%= it.smws.lang %>/language" method="post">
+                <button class="en-button <%= it.smws.lang == 'en' ? 'active' : '' %>" type="submit" name="lang" value="en">EN</button>
+                <span>/</span>
+                <button class="cs-button <%= it.smws.lang == 'cs' ? 'active' : '' %>" type="submit" name="lang" value="cs">CS</button>
+            </form>
+            <div class="nav-menu"><span></span><span></span><span></span><span></span></div>
+            <ul class="header__list">
+                <li class="header__item"><a href="#" class="header__link"><%= it.links.aboutMe %></a></li>
+                <li class="header__item"><a href="#" class="header__link"><%= it.links.myWork %></a></li>
+                <li class="header__item"><a href="#" class="header__link"><%= it.links.contact %></a></li>
+            </ul>
+        </nav>
+    </header>
 
-            </nav>
-        </header>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean placerat. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Integer malesuada. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Etiam dictum tincidunt diam. Fusce tellus. Aliquam ornare wisi eu metus. Vivamus luctus egestas leo. In dapibus augue non sapien. Fusce suscipit libero eget elit. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Etiam egestas wisi a erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Mauris tincidunt sem sed arcu.</p>
-        <p>Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Donec quis nibh at felis congue commodo. Phasellus et lorem id felis nonummy placerat. Pellentesque sapien. Aliquam ornare wisi eu metus. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Integer malesuada. Pellentesque pretium lectus id turpis. Integer imperdiet lectus quis justo. Aliquam id dolor. Aliquam ornare wisi eu metus. Suspendisse sagittis ultrices augue. Integer tempor.</p>
-        <p>Suspendisse sagittis ultrices augue. Mauris metus. Mauris dictum facilisis augue. Praesent id justo in neque elementum ultrices. Ut tempus purus at lorem. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Aenean fermentum risus id tortor. Fusce consectetuer risus a nunc. Pellentesque sapien. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Integer malesuada.</p>
-        <p>Phasellus faucibus molestie nisl. Mauris metus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Vivamus porttitor turpis ac leo. Integer pellentesque quam vel velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Curabitur sagittis hendrerit ante. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Nullam sit amet magna in magna gravida vehicula.</p>
-        <p>Vivamus ac leo pretium faucibus. Nulla pulvinar eleifend sem. Phasellus et lorem id felis nonummy placerat. Mauris tincidunt sem sed arcu. Mauris dictum facilisis augue. Integer tempor. Etiam commodo dui eget wisi. Aliquam ornare wisi eu metus. Morbi scelerisque luctus velit. Etiam quis quam. Integer pellentesque quam vel velit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-        <p>Pellentesque arcu. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Suspendisse nisl. Morbi scelerisque luctus velit. Etiam neque. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Aliquam erat volutpat. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Pellentesque pretium lectus id turpis. Mauris tincidunt sem sed arcu. Nam quis nulla. Etiam dictum tincidunt diam. Aenean id metus id velit ullamcorper pulvinar. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Etiam dictum tincidunt diam. Quisque porta.</p>
-
+    <section class="hero container">
+        <div class="hero__logo">
+            <img
+            alt="A baby smiling with a yellow headband."
+            srcset="
+              logo-purple-180.png  180w,
+              logo-purple-250.png  250w
+            "
+            sizes="(min-width: 40em) 250px, 180px"
+            src="/logo-purple-250.png" alt="Logo">
+        </div>
+        <div class="hero__text">
+            <h1 class="heading-primary"><%= it.hero.name %></h1>
+            <br>
+            <h2 class="heading-secondary text-highlight"><%= it.hero.profession %></h2>
+        </div>
+    </section>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean placerat. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Integer malesuada. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Etiam dictum tincidunt diam. Fusce tellus. Aliquam ornare wisi eu metus. Vivamus luctus egestas leo. In dapibus augue non sapien. Fusce suscipit libero eget elit. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Etiam egestas wisi a erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Mauris tincidunt sem sed arcu.</p>
+    <p>Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Donec quis nibh at felis congue commodo. Phasellus et lorem id felis nonummy placerat. Pellentesque sapien. Aliquam ornare wisi eu metus. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Integer malesuada. Pellentesque pretium lectus id turpis. Integer imperdiet lectus quis justo. Aliquam id dolor. Aliquam ornare wisi eu metus. Suspendisse sagittis ultrices augue. Integer tempor.</p>
+    <p>Suspendisse sagittis ultrices augue. Mauris metus. Mauris dictum facilisis augue. Praesent id justo in neque elementum ultrices. Ut tempus purus at lorem. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Aenean fermentum risus id tortor. Fusce consectetuer risus a nunc. Pellentesque sapien. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Integer malesuada.</p>
+    <p>Phasellus faucibus molestie nisl. Mauris metus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Vivamus porttitor turpis ac leo. Integer pellentesque quam vel velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Curabitur sagittis hendrerit ante. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Nullam sit amet magna in magna gravida vehicula.</p>
+    <p>Vivamus ac leo pretium faucibus. Nulla pulvinar eleifend sem. Phasellus et lorem id felis nonummy placerat. Mauris tincidunt sem sed arcu. Mauris dictum facilisis augue. Integer tempor. Etiam commodo dui eget wisi. Aliquam ornare wisi eu metus. Morbi scelerisque luctus velit. Etiam quis quam. Integer pellentesque quam vel velit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <p>Pellentesque arcu. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Suspendisse nisl. Morbi scelerisque luctus velit. Etiam neque. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Aliquam erat volutpat. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Pellentesque pretium lectus id turpis. Mauris tincidunt sem sed arcu. Nam quis nulla. Etiam dictum tincidunt diam. Aenean id metus id velit ullamcorper pulvinar. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Etiam dictum tincidunt diam. Quisque porta.</p>
 <script src="/index.js"></script>
+
 </body>
 </html>

@@ -6,5 +6,9 @@
     "aboutMe": "O mně",
     "myWork": "Mé práce",
     "contact": "Kontakt"
+  },
+  "hero": {
+    "name": "Ahoj, jsem Jakub.",
+    "profession": "Dělám webovky."
   }
 }

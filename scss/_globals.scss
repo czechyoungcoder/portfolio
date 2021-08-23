@@ -6,6 +6,15 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
   color: white;
+
+  @include breakpoint-up(medium) {
+   font-size: 68.75%;
+  }
+
+  @include breakpoint-up(large) {
+    font-size: 81.25%
+  }
+  
 }
 
 *, *::before, *::after {
@@ -29,4 +38,38 @@ body {
 .container {
   max-width: 130rem;
   margin: 0 auto;
+  padding: 5rem 1rem;
+}
+
+.text-highlight {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 110%;
+    transform: translateX(-5%);
+    left: 0;
+    bottom: -10%;
+    height: .7em;
+    border-radius: .3em;
+    
+    background-color: rgba($primary-color, .4);
+    z-index: -1;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  margin-bottom: .5em;
+}
+
+.heading-primary {
+  font-size: 3.25rem;
+  font-weight: 600;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  font-weight: 500;
 }

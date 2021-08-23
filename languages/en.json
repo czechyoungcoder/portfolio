@@ -6,5 +6,9 @@
         "aboutMe": "About me",
         "myWork": "My work",
         "contact": "Contact"
+    },
+    "hero": {
+        "name": "Hi, I'm Jakub.",
+        "profession": "A web developer."
     }
 }

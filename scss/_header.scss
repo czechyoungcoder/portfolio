@@ -6,6 +6,7 @@
     align-items: center;
     padding: 3rem 3rem;
     position: relative;
+    z-index: 100;
 
     &::before {
       content: "";
@@ -47,7 +48,6 @@
         top: 50vh;
         right: 0;
         transform: translateY(-50%);
-        z-index: 2;
         margin: 0;
       }
 
