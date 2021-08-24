@@ -1,0 +1,32 @@
+.about {
+  background-color: $dark-black;
+  margin-top: 6rem;
+  line-height: 1.7;
+  position: relative;
+
+  .container-small {
+    @include breakpoint-up(medium) {
+      padding-top: 2rem;
+    } 
+    @include breakpoint-up(large) {
+      padding-top: 0;
+    }
+    
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-30%, -30%);
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background: $red;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+}

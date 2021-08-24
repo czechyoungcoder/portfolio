@@ -31,7 +31,6 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:lang', function (req, res) {
-
   smws.run(req, res, {
       page: 'index'
   });

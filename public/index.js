@@ -3,9 +3,13 @@ const burger = document.querySelector(".nav-menu");
 const headerNav = document.querySelector(".header__nav");
 const headerName = document.querySelector(".header__name");
 
-burger.addEventListener("click", () => {
+function isMenuOpen() {
+    return headerNav.classList.contains("open");
+}
+
+function toggleNav() {
     burger.classList.toggle("open");
-    if (headerNav.classList.contains("open")) {
+    if (isMenuOpen()) {
         headerNav.classList.remove("open");
         headerNav.classList.add("close");
         headerName.classList.remove("inverse");
@@ -16,4 +20,15 @@ burger.addEventListener("click", () => {
         headerName.classList.add("inverse");
         document.body.style.overflowY = "hidden";
     }
+}
+
+// burger.addEventListener("click", () => {
+//     toggleNav();
+// })
+
+headerNav.addEventListener("click", (e) => {
+    if (e.target == burger || e.target.parentElement == burger || e.target.classList.contains("header__link")) toggleNav()
 })
+
+
+// SECTION OBSERVERS

@@ -10,5 +10,6 @@
     "hero": {
         "name": "Hi, I'm Jakub.",
         "profession": "A web developer."
-    }
+    },
+    "sections": {}
 }
