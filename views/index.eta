@@ -56,6 +56,36 @@
             <p>I'm a 16 year old boy who's passionate about building websites and is in love with modern software development. I'm currently studying computer science in high school, but I'm mostly self-taught as I believe that one can learn really anything with so many available resources on the internet, these days!</p>
         </div>
     </section>
+
+    <section class="work container" id="<%= formatToHash(it.links.myWork) %>">
+            <h2 class="heading-secondary"><%= it.links.myWork %></h2>
+        <div class="work__projects">
+            <div class="work__project">
+                <h3 class="work__title">To-do List</h3>
+                <div class="work__links">
+                    <a href="" class="work__showcase"></a>
+                    <span class="work__divider"></span>
+                    <a href="" class="work__source-code"></a>
+                </div>
+                <div class="work__details">
+                    <p class="work__description">This was a very nice project!</p>
+                    <img src="/logo-purple-250.png" alt="" class="work__image">
+                    <div class="work__tools">
+                        <h4>Tools used:</h4>
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <% /* <div class="work__project">
+                <div class="work__title">To-do List</div>
+            </div>
+            <div class="work__project">
+                <div class="work__title">To-do List</div>
+            </div> */ %>
+        </div>
+    </section>
     
 <script src="/index.js"></script>
 

@@ -27,8 +27,8 @@ function toggleNav() {
 // })
 
 headerNav.addEventListener("click", (e) => {
-    if (e.target == burger || e.target.parentElement == burger || e.target.classList.contains("header__link")) toggleNav()
-})
+    if (e.target == burger || e.target.parentElement == burger || e.target.classList.contains("header__link") && isMenuOpen()) toggleNav()
+});
 
 
 // SECTION OBSERVERS

@@ -1,0 +1,50 @@
+.work {
+
+  @include breakpoint-down(small) {
+    text-align: center;
+  } 
+
+  &__projects {
+
+  }
+  
+  &__project {
+
+  }
+
+  &__title {
+    
+  }
+
+  &__links {
+
+  }
+
+  &__showcase {
+
+  }
+
+  &__divider {
+
+  }
+
+  &__source-code {
+
+  }
+
+  &__details {
+
+  }
+
+  &__description {
+
+  }
+
+  &__image {
+
+  }
+
+  &__tools {
+
+  }
+}
