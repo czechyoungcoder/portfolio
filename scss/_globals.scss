@@ -36,10 +36,15 @@ body {
 }
 
 .container {
-  max-width: 100rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 6rem 2.5rem;
+  max-width: 110rem;
+  margin: 5rem auto 12rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+
+  @include breakpoint-up(medium) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
 
 .container-small {

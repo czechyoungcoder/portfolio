@@ -59,11 +59,11 @@
 
     <section class="work container" id="<%= formatToHash(it.links.myWork) %>">
             <h2 class="heading-secondary"><%= it.links.myWork %></h2>
-        <div class="work__projects">
+        <div class="work__projects container-small">
             <div class="work__project">
                 <h3 class="work__title">To-do List</h3>
                 <div class="work__links">
-                    <a href="" class="work__showcase"></a>
+                    <a href="" class="work__showcase">Live Preview</a>
                     <span class="work__divider"></span>
                     <a href="" class="work__source-code"></a>
                 </div>
