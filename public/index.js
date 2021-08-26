@@ -31,4 +31,9 @@ headerNav.addEventListener("click", (e) => {
 });
 
 
+const workButtons = document.querySelectorAll(".work__button");
+workButtons.forEach(btn => btn.addEventListener("click", function() {
+    this.parentElement.classList.add("open");
+}))
+
 // SECTION OBSERVERS

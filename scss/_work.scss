@@ -1,3 +1,17 @@
+@keyframes openDetails {
+  0% {
+    transform: scaleY(0);
+  }
+
+  1% {
+
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
 .work {
 
   @include breakpoint-down(small) {
@@ -24,6 +38,13 @@
         "image image"
         "description description"
         "tools .";
+    }
+
+    &.open {
+      .work__details {
+        transform: scaleY(0);
+        animation: openDetails 2s forwards;
+      }
     }
   }
 
@@ -65,12 +86,11 @@
         transform: rotate(45deg) translate(0px, 0px);
       }
     }
-
-
   }
 
   &__title {
     grid-area: title;
+
     @include breakpoint-up(medium) {
       margin-bottom: 0;
     }
@@ -109,7 +129,7 @@
 
   &__details {
     padding: 4rem 0;
-    display: none;
+    transform: scaleY(0);
   }
 
   &__description {
@@ -122,5 +142,19 @@
 
   &__tools {
     grid-area: tools;
+  }
+}
+
+@keyframes openDetails {
+  0% {
+    display: none;
+  }
+
+  1% {
+    display: block;
+  }
+
+  100% {
+    display: block;
   }
 }
