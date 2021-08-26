@@ -33,13 +33,17 @@ body {
   font-family: 'Poppins', sans-serif;
   background: $body-background;
   color: $white;
+  @include breakpoint-down(small) {
+    text-align: center;
+  }
 }
 
 .container {
   max-width: 110rem;
-  margin: 5rem auto 12rem;
+  margin: 3rem auto 12rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+  padding: 2rem 2.5rem;
 
   @include breakpoint-up(medium) {
     padding-left: 4rem;
@@ -92,14 +96,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: $light-blue;
   text-transform: uppercase;
-  text-align: center;
 
-  @include breakpoint-up(medium) {
-    text-align: left;
-  }
 }
 
 .heading-tertiary {
-  font-size: clamp(2.6rem, 7vw, 3.1rem);
-  font-weight: 500;
+  font-size: clamp(1.8rem, 4vw, 2.25rem);
+  font-weight: 600;
 }

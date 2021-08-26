@@ -60,13 +60,15 @@
     <section class="work container" id="<%= formatToHash(it.links.myWork) %>">
             <h2 class="heading-secondary"><%= it.links.myWork %></h2>
         <div class="work__projects container-small">
+
             <div class="work__project">
-                <h3 class="work__title">To-do List</h3>
+                <h3 class="work__title heading-tertiary">To-do List</h3>
                 <div class="work__links">
                     <a href="" class="work__showcase">Live Preview</a>
                     <span class="work__divider"></span>
-                    <a href="" class="work__source-code"></a>
+                    <a href="" class="work__source-code">Source Code</a>
                 </div>
+                <button class="work__button">show details <i class="arrow"></i></button>
                 <div class="work__details">
                     <p class="work__description">This was a very nice project!</p>
                     <img src="/logo-purple-250.png" alt="" class="work__image">
@@ -74,8 +76,8 @@
                         <h4>Tools used:</h4>
                         <p>HTML, CSS, JavaScript</p>
                     </div>
-
                 </div>
+
             </div>
 
             <% /* <div class="work__project">

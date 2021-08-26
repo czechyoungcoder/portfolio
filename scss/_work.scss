@@ -10,41 +10,117 @@
   
   &__project {
     margin: 3rem 0;
+    background: $dark-blue;
+    padding: 2rem;
+    padding-bottom: 3rem;
+    border-radius: 1rem;
+    position: relative;
+
+    @include breakpoint-up(medium) {
+      padding: 3rem 3.5rem 4rem;
+      display: grid;
+      grid-template-areas: 
+        "title links"
+        "image image"
+        "description description"
+        "tools .";
+    }
+  }
+
+  &__button {
+    box-sizing: content-box;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: .5rem 1rem;
+    transform: translate(-50%, 60%);
+    font-family: inherit;
+    font-size: .7em;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: .5em;
+    border: none; 
+    cursor: pointer;
+    color: $dark-blue;
+    background: $yellow;
+    opacity: .95;
+    box-shadow: rgba($yellow, 0.1) 0px .3em 1em .1em;
+    transition: box-shadow .2s ease-in-out, opacity .2s ease-in-out;
+
+    .arrow {
+      display: inline-block;
+      margin-left: 6px;
+      padding: 3px;
+      border: solid $dark-blue;
+      border-width: 0 3px 3px 0;
+      transition: transform .2s ease-in-out;
+      transform: rotate(45deg) translate(-1px, -1px);
+    }
+    
+    &:hover, &:focus {
+      box-shadow: rgba($yellow, 0.2) 0px .35em 1.15em .1em;
+      opacity: 1;
+
+      .arrow {
+        transform: rotate(45deg) translate(0px, 0px);
+      }
+    }
+
+
   }
 
   &__title {
-    
+    grid-area: title;
+    @include breakpoint-up(medium) {
+      margin-bottom: 0;
+    }
   }
 
   &__links {
+    grid-area: links;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    a {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      text-decoration: none;
+    }
   }
 
   &__showcase {
-
-  }
-
-  &__divider {
-
+    color: $link-1;
   }
 
   &__source-code {
+    color: $link-2;
+  }
 
+  &__divider {
+    display: inline-block;
+    height: 1em;
+    width: 2px;
+    background: rgba($white, .2);
+    margin: 0 .8rem;
+    position: relative;
   }
 
   &__details {
-
+    padding: 4rem 0;
+    display: none;
   }
 
   &__description {
-
+    grid-area: description;
   }
 
   &__image {
-
+    grid-area: image;
   }
 
   &__tools {
-
+    grid-area: tools;
   }
 }

@@ -37,6 +37,8 @@
     h3 {
       margin-top: -3rem;
       color: $yellow;
+      font-size: clamp(2.6rem, 7vw, 3.1rem);
+      font-weight: 500;
     }
   }
 }
