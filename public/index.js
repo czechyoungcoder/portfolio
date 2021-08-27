@@ -30,10 +30,22 @@ headerNav.addEventListener("click", (e) => {
     if (e.target == burger || e.target.parentElement == burger || e.target.classList.contains("header__link") && isMenuOpen()) toggleNav()
 });
 
+function isDetailsOpen(workButton) {
+    return workButton.parentElement.classList.contains("open");
+}
 
 const workButtons = document.querySelectorAll(".work__button");
 workButtons.forEach(btn => btn.addEventListener("click", function() {
-    this.parentElement.classList.add("open");
+    if (isDetailsOpen(this)) {
+        this.parentElement.classList.remove("open");
+        this.firstChild.textContent = "show details";
+    }
+    else { 
+        this.parentElement.classList.add("open");
+        this.firstChild.textContent = "hide details";
+    }
 }))
+
+
 
 // SECTION OBSERVERS
