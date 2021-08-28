@@ -5,7 +5,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
   }
 
   &__logo {
@@ -30,12 +29,8 @@
       margin-right: auto;
     }
 
-    h1 {
-      
-    }
-
     h3 {
-      margin-top: -3rem;
+      margin-top: -1.5rem;
       color: $yellow;
       font-size: clamp(2.6rem, 7vw, 3.1rem);
       font-weight: 500;

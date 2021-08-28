@@ -38,11 +38,19 @@ const workButtons = document.querySelectorAll(".work__button");
 workButtons.forEach(btn => btn.addEventListener("click", function() {
     if (isDetailsOpen(this)) {
         this.parentElement.classList.remove("open");
-        this.firstChild.textContent = "show details";
+        if (window.location.pathname.includes("cs")) {
+            this.firstChild.textContent = "otevři detaily";    
+        } else {
+            this.firstChild.textContent = "show details";
+        }
     }
     else { 
         this.parentElement.classList.add("open");
-        this.firstChild.textContent = "hide details";
+        if (window.location.pathname.includes("cs")) {
+            this.firstChild.textContent = "zavři detaily";    
+        } else {
+            this.firstChild.textContent = "hide details";
+        }
     }
 }))
 

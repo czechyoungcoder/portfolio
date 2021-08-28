@@ -11,5 +11,16 @@
         "name": "Hi, I'm Jakub.",
         "profession": "A web developer."
     },
-    "sections": {}
+    "work": {
+        "livePreview": "Live Preview",
+        "sourceCode": "Source Code",
+        "toolsUsed": "Tools used",
+        "showDetails": "Show Details",
+        "projects": {
+            "todoList": {
+                "title": "To-do List",
+                "description": "I've built this project all from scratch to practise my front-end skills. I've come up with a couple of smooth animations in this application as well."
+            }
+        }
+    }
 }

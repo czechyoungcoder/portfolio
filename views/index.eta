@@ -45,7 +45,6 @@
         </div>
         <div class="hero__text">
             <h1 class="heading-primary"><%= it.hero.name %></h1>
-            <br>
             <h3 class="heading-tertiary text-highlight"><%= it.hero.profession %></h3>
         </div>
     </section>
@@ -62,18 +61,18 @@
         <div class="work__projects container-small">
 
             <div class="work__project">
-                <h3 class="work__title heading-tertiary">To-do List</h3>
+                <h3 class="work__title heading-tertiary"><%= it.work.projects.todoList.title %></h3>
                 <div class="work__links">
-                    <a href="" class="work__showcase">Live Preview</a>
+                    <a href="" class="work__showcase"><%= it.work.livePreview %></a>
                     <span class="work__divider"></span>
-                    <a href="" class="work__source-code">Source Code</a>
+                    <a href="" class="work__source-code"><%= it.work.sourceCode %></a>
                 </div>
-                <button class="work__button">show details <i class="arrow"></i></button>
+                <button class="work__button"><%= it.work.showDetails %> <i class="arrow"></i></button>
                 <div class="work__details">
-                    <p class="work__description">This was a very nice project!</p>
-                    <img src="/logo-purple-250.png" alt="" class="work__image">
+                    <p class="work__description"><%= it.work.projects.todoList.description %></p>
+                    <img src="/todo-list.png" alt="" class="work__image">
                     <div class="work__tools">
-                        <h4>Tools used:</h4>
+                        <h4><%= it.work.toolsUsed %></h4>
                         <p>HTML, CSS, JavaScript</p>
                     </div>
                 </div>

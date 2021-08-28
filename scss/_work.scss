@@ -39,16 +39,19 @@
       display: grid;
       grid-template-areas: 
         "title links"
-        "image image"
-        "description description"
-        "tools .";
+        "details details"
+        "details details"
     }
 
     &.open {
       .work__details {
         max-height: 60rem;
-        padding: 4rem 0 2rem;
+        padding: 2.5rem 1rem .5rem;
         opacity: 1;
+
+        @include breakpoint-up(medium) {
+          padding: 4rem 0 2rem;
+        }
       }
       
       .work__button {
@@ -154,6 +157,16 @@
     opacity: 0;
     max-height: 0;
     overflow: hidden;
+    grid-area: details;
+
+    @include breakpoint-up(medium) {
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-areas: 
+      "description image"
+      "tools image"
+    }
+    
   }
 
   &__description {
@@ -162,10 +175,20 @@
 
   &__image {
     grid-area: image;
+    border-radius: .25rem;
+    max-width: 300px;
+    @include breakpoint-down(small) {
+      margin: 3rem 0 2rem;
+    }
   }
 
   &__tools {
     grid-area: tools;
+
+    h4 {
+      font-size: 1.15em;
+      font-weight: 500;
+    }
   }
 }
 
