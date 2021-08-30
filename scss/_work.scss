@@ -33,6 +33,7 @@
     padding-bottom: 3rem;
     border-radius: 1rem;
     position: relative;
+    transition: box-shadow .3s ease-out;
 
     @include breakpoint-up(medium) {
       padding: 3rem 3.5rem 4rem;
@@ -41,6 +42,10 @@
         "title links"
         "details details"
         "details details"
+    }
+
+    &:hover {
+      box-shadow: 0 0 0.5rem .15rem rgba(lighten($primary-color, 10%), 0.6);
     }
 
     &.open {
@@ -137,10 +142,20 @@
 
   &__showcase {
     color: $link-1;
+    transition: color .2s ease-in-out;
+
+    &:hover {
+      color: lighten($link-1, 10%);
+    }
   }
 
   &__source-code {
     color: $link-2;
+    transition: color .2s ease-in-out;
+
+    &:hover {
+      color: lighten($link-2, 10%);
+    }
   }
 
   &__divider {
@@ -188,6 +203,11 @@
     h4 {
       font-size: 1.15em;
       font-weight: 500;
+    }
+
+    p {
+      font-size: .9em;
+      color: lighten($secondary-color, 10%);
     }
   }
 }
