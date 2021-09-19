@@ -7,6 +7,9 @@
         "myWork": "My work",
         "contact": "Contact"
     },
+    "about": {
+        "description": "I'm a 16 year old boy who's passionate about building websites and is in love with modern software development. I'm currently studying computer science in high school, but I'm mostly self-taught as I believe that one can learn really anything with so many available resources on the internet, these days!"
+    },
     "hero": {
         "name": "Hi, I'm Jakub.",
         "profession": "A web developer."
@@ -19,7 +22,15 @@
         "projects": {
             "todoList": {
                 "title": "To-do List",
-                "description": "I've built this project all from scratch to practise my front-end skills. I've come up with a couple of smooth animations in this application as well."
+                "description": "This application lets you create your digital to-dos so you can easily keep track of the things you need to get done. It all works on the few major functions you need: creating new items, deleting items and renaming them. The simple colors and smooth animations add up to the decent user experience."
+            },
+            "calculator": {
+                "title": "Calculator",
+                "description": "A simple calculator with all the basic operations you can think of. It's another rookie project but I had so much fun figuring many things while building this. With this project, I learned a lot about dealing with user's input to show the intended output."
+            },
+            "movieFight": {
+                "title": "Movie Fight",
+                "description": "This is one of the projects I built using a course. You can compare two movies/series and see which one does better in different stats"
             }
         }
     }

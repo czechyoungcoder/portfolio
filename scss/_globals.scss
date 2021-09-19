@@ -40,8 +40,6 @@ body {
 .container {
   max-width: 110rem;
   margin: 3rem auto 12rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
   padding: 2rem 2.5rem;
 
   @include breakpoint-up(medium) {
@@ -49,12 +47,19 @@ body {
     padding-right: 4rem;
   }
 }
-
-.container-small {
-  max-width: 70rem;
+.container-medium, .container-small {
   margin-left: auto;
   margin-right: auto;
 }
+
+.container-medium {
+  max-width: 80rem;
+}
+
+.container-small {
+  max-width: 70rem;
+}
+
 
 .text-highlight {
   position: relative;
@@ -106,4 +111,9 @@ h4, h5, h6 {
 .heading-tertiary {
   font-size: clamp(1.8rem, 4vw, 2.25rem);
   font-weight: 600;
+}
+
+h4 {
+  font-size: clamp(1.7rem, 3.5vw, 2rem);
+  font-weight: 500;
 }

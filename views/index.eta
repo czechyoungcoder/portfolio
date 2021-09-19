@@ -52,13 +52,13 @@
     <section class="about container" id="<%= formatToHash(it.links.aboutMe) %>">
         <div class="container-small">
             <h2 class="heading-secondary"><%= it.links.aboutMe %></h2>
-            <p>I'm a 16 year old boy who's passionate about building websites and is in love with modern software development. I'm currently studying computer science in high school, but I'm mostly self-taught as I believe that one can learn really anything with so many available resources on the internet, these days!</p>
+            <p><%= it.about.description %></p>
         </div>
     </section>
 
     <section class="work container" id="<%= formatToHash(it.links.myWork) %>">
             <h2 class="heading-secondary"><%= it.links.myWork %></h2>
-        <div class="work__projects container-small">
+        <div class="work__projects container-medium">
 
             <div class="work__project">
                 <h3 class="work__title heading-tertiary"><%= it.work.projects.todoList.title %></h3>
@@ -70,21 +70,71 @@
                 <button class="work__button"><%= it.work.showDetails %> <i class="arrow"></i></button>
                 <div class="work__details">
                     <p class="work__description"><%= it.work.projects.todoList.description %></p>
-                    <img src="/todo-list.png" alt="" class="work__image">
+                    <img
+                        class="work__image"
+                        alt="To-do list image showcase"
+                        srcset="
+                            todo-list-170.png 170w,
+                            todo-list-340.png 340w"
+                        sizes="(min-width: 40em) 340px, 170px"
+                        src="340.png" alt="Logo">        
                     <div class="work__tools">
                         <h4><%= it.work.toolsUsed %></h4>
-                        <p>HTML, CSS, JavaScript</p>
+                        <p>HTML, CSS, Web Storage API, JavaScript</p>
                     </div>
                 </div>
-
             </div>
-
-            <% /* <div class="work__project">
-                <div class="work__title">To-do List</div>
-            </div>
+            
             <div class="work__project">
-                <div class="work__title">To-do List</div>
-            </div> */ %>
+                <h3 class="work__title heading-tertiary"><%= it.work.projects.calculator.title %></h3>
+                <div class="work__links">
+                    <a href="" class="work__showcase"><%= it.work.livePreview %></a>
+                    <span class="work__divider"></span>
+                    <a href="" class="work__source-code"><%= it.work.sourceCode %></a>
+                </div>
+                <button class="work__button"><%= it.work.showDetails %> <i class="arrow"></i></button>
+                <div class="work__details">
+                    <p class="work__description"><%= it.work.projects.calculator.description %></p>
+                    <img
+                        class="work__image"
+                        alt="Calculator image showcase"
+                        srcset="
+                            calculator-170.png 170w,
+                            calculator-340.png 340w"
+                        sizes="(min-width: 40em) 340px, 170px"
+                        src="340.png" alt="Logo">        
+                    <div class="work__tools">
+                        <h4><%= it.work.toolsUsed %></h4>
+                        <p>HTML, CSS, RegExp, JavaScript</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work__project">
+                <h3 class="work__title heading-tertiary"><%= it.work.projects.calculator.title %></h3>
+                <div class="work__links">
+                    <a href="" class="work__showcase"><%= it.work.livePreview %></a>
+                    <span class="work__divider"></span>
+                    <a href="" class="work__source-code"><%= it.work.sourceCode %></a>
+                </div>
+                <button class="work__button"><%= it.work.showDetails %> <i class="arrow"></i></button>
+                <div class="work__details">
+                    <p class="work__description"><%= it.work.projects.calculator.description %></p>
+                    <img
+                        class="work__image"
+                        alt="Movie Fight image showcase"
+                        srcset="
+                            movie-fight-170.png 170w,
+                            movie-fight-340.png 340w"
+                        sizes="(min-width: 40em) 340px, 170px"
+                        src="340.png" alt="Logo">        
+                    <div class="work__tools">
+                        <h4><%= it.work.toolsUsed %></h4>
+                        <p>HTML, <a href="https://bulma.io/">Bulma CSS</a>, JavaScript, Axios, <a href="http://www.omdbapi.com/">OMDb API</a></p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
     

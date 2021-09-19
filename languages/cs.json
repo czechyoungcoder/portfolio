@@ -7,6 +7,9 @@
     "myWork": "Mé práce",
     "contact": "Kontakt"
   },
+  "about": {
+    "description": "Jsem 16letý kluk, kterého baví dělat webovky a vyvíjet moderní software. Právě studuji výpočetní střední školu, ale drtivou většinu těchto dovedností jsem se díky dnešním rozšířeným zdrojům na internetu naučil především sám."
+  },
   "hero": {
     "name": "Ahoj, jsem Jakub.",
     "profession": "Dělám webovky."
@@ -19,7 +22,11 @@
     "projects": {
       "todoList": {
         "title": "To-do List",
-        "description": "I've built this project all from scratch to practise my front-end skills. I've come up with a couple of smooth animations in this application as well."
+        "description": "S touto aplikací si můžeš vytvářet svůj vlastní to-do seznam (seznam věcí, které chceš udělat). Vše funguje na těch nejzákladnějších funkcí, které potřebuješ: přidávání nových položek, odstranění položek a jejich přejmenování. Jednoduchý design a plynulé animace doplňují konečný uživatelský prožitek."
+      },
+      "calculator": {
+        "title": "Kalkulačka",
+        "description": "Jednoduchá kalkulačka se všemi základními operacemi. Jedná se o další malý projekt, který byl součástí mých začátků. Přesto jsem si užil celý proces, naučil jsem se za běhu pár nových věcí a hlavně získal další zkušenosti. Příblížil jsem si práci s uživatelským vstupem a jak s ním správně pracovat, aby se ukázal ten správný výstup."
       }
     }
   }

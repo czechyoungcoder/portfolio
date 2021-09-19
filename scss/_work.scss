@@ -27,7 +27,11 @@
   }
   
   &__project {
-    margin: 3rem 0;
+    
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+
     background: $dark-blue;
     padding: 2rem;
     padding-bottom: 3rem;
@@ -50,7 +54,7 @@
 
     &.open {
       .work__details {
-        max-height: 60rem;
+        max-height: 70rem;
         padding: 2.5rem 1rem .5rem;
         opacity: 1;
 
@@ -174,14 +178,13 @@
     overflow: hidden;
     grid-area: details;
 
-    @include breakpoint-up(medium) {
+    @include breakpoint-up(large) {
       display: grid;
       grid-gap: 2rem;
       grid-template-areas: 
       "description image"
       "tools image"
     }
-    
   }
 
   &__description {
@@ -191,23 +194,24 @@
   &__image {
     grid-area: image;
     border-radius: .25rem;
-    max-width: 300px;
-    @include breakpoint-down(small) {
-      margin: 3rem 0 2rem;
+    display: block;
+    margin-left: auto;
+    margin-left: right;
+    
+
+    @include breakpoint-down(medium) {
+      margin: 3rem auto 2rem;
     }
   }
 
   &__tools {
     grid-area: tools;
 
-    h4 {
-      font-size: 1.15em;
-      font-weight: 500;
-    }
-
     p {
-      font-size: .9em;
       color: lighten($secondary-color, 10%);
+    }
+    a {
+      color: inherit;
     }
   }
 }

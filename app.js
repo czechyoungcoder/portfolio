@@ -11,8 +11,6 @@ app.use(cookieParser());
 app.use(express.static(__dirname + '/public'));
 
 
-
-
 // SMWS CONFIG
 smws.config({
   languages: ['cs','en'],
