@@ -111,7 +111,7 @@
             </div>
 
             <div class="work__project">
-                <h3 class="work__title heading-tertiary"><%= it.work.projects.calculator.title %></h3>
+                <h3 class="work__title heading-tertiary"><%= it.work.projects.movieFight.title %></h3>
                 <div class="work__links">
                     <a href="" class="work__showcase"><%= it.work.livePreview %></a>
                     <span class="work__divider"></span>
@@ -119,7 +119,7 @@
                 </div>
                 <button class="work__button"><%= it.work.showDetails %> <i class="arrow"></i></button>
                 <div class="work__details">
-                    <p class="work__description"><%= it.work.projects.calculator.description %></p>
+                    <p class="work__description"><%= it.work.projects.movieFight.description %></p>
                     <img
                         class="work__image"
                         alt="Movie Fight image showcase"
@@ -131,6 +131,56 @@
                     <div class="work__tools">
                         <h4><%= it.work.toolsUsed %></h4>
                         <p>HTML, <a href="https://bulma.io/">Bulma CSS</a>, JavaScript, Axios, <a href="http://www.omdbapi.com/">OMDb API</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work__project">
+                <h3 class="work__title heading-tertiary"><%= it.work.projects.natours.title %></h3>
+                <div class="work__links">
+                    <a href="" class="work__showcase"><%= it.work.livePreview %></a>
+                    <span class="work__divider"></span>
+                    <a href="" class="work__source-code"><%= it.work.sourceCode %></a>
+                </div>
+                <button class="work__button"><%= it.work.showDetails %> <i class="arrow"></i></button>
+                <div class="work__details">
+                    <p class="work__description"><%= it.work.projects.natours.description %></p>
+                    <img
+                        class="work__image"
+                        alt="Natours image showcase"
+                        srcset="
+                            natours-170.png 170w,
+                            natours-340.png 340w"
+                        sizes="(min-width: 40em) 340px, 170px"
+                        src="340.png" alt="Logo">        
+                    <div class="work__tools">
+                        <h4><%= it.work.toolsUsed %></h4>
+                        <p>HTML, CSS (SASS)</p>
+                    </div>
+                </div>
+            </div>
+    <% const yay = it.work.projects.clipboard.description %>
+            <div class="work__project">
+                <h3 class="work__title heading-tertiary"><%= it.work.projects.clipboard.title %></h3>
+                <div class="work__links">
+                    <a href="" class="work__showcase"><%= it.work.livePreview %></a>
+                    <span class="work__divider"></span>
+                    <a href="" class="work__source-code"><%= it.work.sourceCode %></a>
+                </div>
+                <button class="work__button"><%= it.work.showDetails %> <i class="arrow"></i></button>
+                <div class="work__details">
+                    <p class="work__description"><%~ it.work.projects.clipboard.description %></p>
+                    <img
+                        class="work__image"
+                        alt="Clipboard Landing Page image showcase"
+                        srcset="
+                            clipboard-landing-page-170.png 170w,
+                            clipboard-landing-page-340.png 340w"
+                        sizes="(min-width: 40em) 340px, 170px"
+                        src="340.png" alt="Logo">        
+                    <div class="work__tools">
+                        <h4><%= it.work.toolsUsed %></h4>
+                        <p>HTML, CSS (SASS)</p>
                     </div>
                 </div>
             </div>

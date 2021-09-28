@@ -8,7 +8,7 @@
     "contact": "Kontakt"
   },
   "about": {
-    "description": "Jsem 16letý kluk, kterého baví dělat webovky a vyvíjet moderní software. Právě studuji výpočetní střední školu, ale drtivou většinu těchto dovedností jsem se díky dnešním rozšířeným zdrojům na internetu naučil především sám."
+    "description": "Jsem 17letý kluk, kterého baví dělat webovky a vyvíjet moderní software. Právě studuji výpočetní střední školu, ale drtivou většinu těchto dovedností jsem se díky dnešním rozšířeným zdrojům na internetu naučil především sám."
   },
   "hero": {
     "name": "Ahoj, jsem Jakub.",
@@ -21,12 +21,24 @@
     "showDetails": "Otevři detaily",
     "projects": {
       "todoList": {
-        "title": "To-do List",
+        "title": "To-do Seznam",
         "description": "S touto aplikací si můžeš vytvářet svůj vlastní to-do seznam (seznam věcí, které chceš udělat). Vše funguje na těch nejzákladnějších funkcí, které potřebuješ: přidávání nových položek, odstranění položek a jejich přejmenování. Jednoduchý design a plynulé animace doplňují konečný uživatelský prožitek."
       },
       "calculator": {
         "title": "Kalkulačka",
         "description": "Jednoduchá kalkulačka se všemi základními operacemi. Jedná se o další malý projekt, který byl součástí mých začátků. Přesto jsem si užil celý proces, naučil jsem se za běhu pár nových věcí a hlavně získal další zkušenosti. Příblížil jsem si práci s uživatelským vstupem a jak s ním správně pracovat, aby se ukázal ten správný výstup."
+      },
+      "movieFight": {
+        "title": "Movie Fight",
+        "description": "Jeden z projektů, který jsem vybudoval pomocí kurzu. Můžeš vybrat dva filmové tituly a porovnat, jak si mezi sebou vedou v různých statistikách podle světově nejznámější IMDb databáze filmů."
+      },
+      "natours": {
+        "title": "Natours",
+        "description": "Další kurzový projekt, jenž mi ukázal sílu a krásu čistého CSS. Naučil jsem se aplikovat dechberoucí animace a zkrátka jak udělat věci pěkně!"
+      },
+      "clipboard": {
+        "title": "Clipboard Landing Page",
+        "description": "Stránka, kterou jsem vytvořil pouze se zadaným mockup designem. Skvělé front-end cvičení ze stránky <a href=\"https://www.frontendmentor.io/\">Frontend Mentor</a>."
       }
     }
   }

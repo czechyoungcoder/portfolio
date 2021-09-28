@@ -190,6 +190,14 @@
 
   &__description {
     grid-area: description;
+    
+    a {
+      color: #eee;
+      text-shadow: 0 0 .05em #eee;
+      &:hover, &:active {
+        color: #fff;
+      }
+    }
   }
 
   &__image {
