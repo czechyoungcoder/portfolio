@@ -15,6 +15,8 @@
         "profession": "A web developer."
     },
     "work": {
+        "about": "And those are some of my projects!",
+        "extra": "I have spent quite a decent amount of time working with <strong>back-end technologies</strong> like <strong>Node.js</strong> and <strong>MongoDB</strong> database. And I loooove <strong>competitive programming</strong>!",
         "livePreview": "Live Preview",
         "sourceCode": "Source Code",
         "toolsUsed": "Tools used",

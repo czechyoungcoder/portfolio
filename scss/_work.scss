@@ -20,7 +20,11 @@
 
   @include breakpoint-down(small) {
     text-align: center;
-  } 
+  }
+
+  &__about {
+    color: lighten($primary-color, 30%);
+  }
 
   &__projects {
 
@@ -29,7 +33,7 @@
   &__project {
     
     &:not(:last-child) {
-      margin-bottom: 5rem;
+      margin: 3rem 0 5rem;
     }
 
     background: $dark-blue;
@@ -221,6 +225,27 @@
     }
     a {
       color: inherit;
+    }
+  }
+
+  &__extra {
+    background: no-repeat linear-gradient(150deg, $primary-color, darken($primary-color, 15%));
+    border: .2em ridge $secondary-color;
+    padding: 2rem 2rem 3rem;
+    margin: 8rem auto 0;
+    max-width: 50rem;
+    text-align: center;
+    border-radius: 1rem;
+    transition: box-shadow .25s ease-in-out;
+    
+    &:hover {
+      box-shadow: rgba($secondary-color, 0.16) 0 1rem 3.6rem 0, rgba($primary-color, 0.06) 0 0 0 .1rem;
+    }
+    
+    .plus {
+      color: $secondary-color;
+      font-size: 5rem;
+      line-height: 1;
     }
   }
 }

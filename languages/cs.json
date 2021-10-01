@@ -15,6 +15,8 @@
     "profession": "Dělám webovky."
   },
   "work": {
+    "about": "A tady jsou některé z mých projektů!",
+    "extra": "Také jsem pracoval nějakou tu dobu s <strong>back-end technologiemi</strong> jako jsou <strong>Node.js</strong> a <strong>MongoDB</strong> databáze. A dost mě baví různé <strong>programovací úlohy</strong>!",
     "livePreview": "Živá ukázka",
     "sourceCode": "Zdroják",
     "toolsUsed": "Použité nástroje",

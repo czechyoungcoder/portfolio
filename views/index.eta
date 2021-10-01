@@ -35,7 +35,7 @@
     <section class="hero container">
         <div class="hero__logo">
             <img
-            alt="A baby smiling with a yellow headband."
+            alt="My logo with face"
             srcset="
               logo-purple-180.png  180w,
               logo-purple-250.png  250w
@@ -58,6 +58,7 @@
 
     <section class="work container" id="<%= formatToHash(it.links.myWork) %>">
             <h2 class="heading-secondary"><%= it.links.myWork %></h2>
+            <h4 class="work__about"><%~ it.work.about %></h4>
         <div class="work__projects container-medium">
 
             <div class="work__project">
@@ -159,7 +160,7 @@
                     </div>
                 </div>
             </div>
-    <% const yay = it.work.projects.clipboard.description %>
+
             <div class="work__project">
                 <h3 class="work__title heading-tertiary"><%= it.work.projects.clipboard.title %></h3>
                 <div class="work__links">
@@ -184,8 +185,12 @@
                     </div>
                 </div>
             </div>
-
+            <div class="work__extra">
+                <div class="plus">+</div>
+                <p><%~ it.work.extra %></p>
+            </div>
         </div>
+        
     </section>
     
 <script src="/index.js"></script>
