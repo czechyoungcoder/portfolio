@@ -54,6 +54,27 @@ workButtons.forEach(btn => btn.addEventListener("click", function() {
     }
 }))
 
+// FORM
+const form = document.getElementById("contact-form");
+
+const sendMail = (mail) => {
+    fetch("localhost:3000/send", {
+      method: "post",
+      body: mail,
+  
+    }).then((response) => {
+      return response.json();
+    });
+  };
+
+const formEvent = form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    let mail = new FormData(form);
+
+    sendMail(mail);
+})
+
 
 
 // SECTION OBSERVERS

@@ -1,0 +1,11 @@
+.contact {
+  background: #2b296a;
+  transform: skewY(7deg);
+  & > * {
+    transform: skewY(-7deg);
+  }
+
+  h2 {
+    color: #FFD800;
+  }
+}

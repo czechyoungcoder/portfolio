@@ -192,6 +192,17 @@
         </div>
         
     </section>
+
+    <section class="contact container" id="<%= formatToHash(it.links.contact) %>">
+        <h2 class="heading-secondary"><%= it.links.myWork %></h2>
+        <form id="contact-form" action="send" method="post" enctype="multipart/form-data">
+            <input name="name" type="text" required>
+            <input name="email" type="email" required>
+            <input name="message" type="text" required>
+
+            <button type="submit" value="submit"></button>
+        </form>
+    </section>
     
 <script src="/index.js"></script>
 

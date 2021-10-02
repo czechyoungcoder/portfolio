@@ -6,8 +6,11 @@
   "dependencies": {
     "browser-refresh": "^1.7.3",
     "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
     "eta": "^1.12.3",
     "express": "^4.17.1",
+    "multiparty": "^4.2.2",
+    "nodemailer": "^6.6.5",
     "smws": "^1.0.2"
   }
 }
