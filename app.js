@@ -1,7 +1,6 @@
 const express = require('express'),
       nodemailer = require("nodemailer"),
       multiparty = require("multiparty"),
-      Eta = require("eta"),
       cookieParser = require('cookie-parser'),
       smws = require("smws"),
       app = express();
