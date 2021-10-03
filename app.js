@@ -8,7 +8,7 @@ const express = require('express'),
 
 require("dotenv").config();
 
-app.set('view engine', 'Eta');
+app.set('view engine', 'eta');
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
