@@ -58,7 +58,7 @@ workButtons.forEach(btn => btn.addEventListener("click", function() {
 const form = document.getElementById("contact-form");
 
 const sendMail = (mail) => {
-    fetch("localhost:3000/send", {
+    fetch("https://portfolio-test-project.herokuapp.com/send", {
       method: "post",
       body: mail,
   
