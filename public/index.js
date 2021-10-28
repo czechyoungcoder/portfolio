@@ -57,6 +57,10 @@ const sendMail = (mail) => {
     fetch("https://portfolio-test-project.herokuapp.com/send", {
       method: "post",
       body: mail,
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
     }).then((response) => {
       console.log("yo it works!")
       return response.json();
