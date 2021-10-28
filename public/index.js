@@ -54,16 +54,15 @@ workButtons.forEach(btn => btn.addEventListener("click", function() {
 const form = document.getElementById("contact-form");
 
 const sendMail = (mail) => {
-    fetch("https://portfolio-test-project.herokuapp.com/send", {
+    fetch("http://localhost:3000/send", {
       method: "post",
       body: mail,
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
     }).then((response) => {
-      return response.json();
-    }).then(data => console.log(data));
+        console.log(response);
+        alert("An email was successfully sent!")
+    }).catch(err => {
+        console.log(err);
+    })
   };
 
 const formEvent = form.addEventListener("submit", (event) => {

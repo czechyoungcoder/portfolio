@@ -55,7 +55,6 @@ app.post("/send", (req, res) => {
   let form = new multiparty.Form();
   let data = {};
   form.parse(req, (err, fields) => {
-    console.log(fields);
     Object.keys(fields).forEach(property => {
       data[property] = fields[property].toString();
     });
