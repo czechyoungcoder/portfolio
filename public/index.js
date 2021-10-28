@@ -63,7 +63,8 @@ const sendMail = (mail) => {
       },
     }).then((response) => {
       console.log("yo it works!")
-      console.log(response)
+      console.log(response);
+      console.log(response.json());
       return response;
     })
   };
