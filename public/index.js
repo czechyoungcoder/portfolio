@@ -65,8 +65,8 @@ const sendMail = (mail) => {
       console.log("yo it works!")
       console.log(response);
       console.log(response.json());
-      return response;
-    })
+      return response.json();
+    }).then(data => console.log(data));
   };
 
 const formEvent = form.addEventListener("submit", (event) => {
