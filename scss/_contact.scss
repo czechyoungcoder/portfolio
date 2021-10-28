@@ -1,11 +1,67 @@
 .contact {
-  background: #2b296a;
+  text-align: left;
+  background: #3A36A2;
   transform: skewY(7deg);
   & > * {
     transform: skewY(-7deg);
   }
 
   h2 {
-    color: #FFD800;
+    color: $yellow;
+  }
+}
+
+.form {
+  margin: 3rem auto;
+
+  &__data {
+  
+  }
+
+  &__group {
+    margin: 2rem 0;
+
+    &:hover > label {
+      color: #fff;
+    }
+  }
+
+  &__label {
+    color: #DDDEFC;
+    display: block;
+    font-size: 1.3rem;
+  }
+
+  &__input, &__message {
+    width: 90%;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    margin: 0.5rem auto;
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: $dark-black;
+    font-weight: 500;
+    border: none;
+    transition: all .3s;
+    
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 .75rem 1rem darken(rgba($secondary-color, .8), 10%);
+    }
+  }
+
+  &__message {
+    min-height: 10rem;
+    resize: vertical;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    &::placeholder {
+      color: #C0C0C0;
+      font-weight: 400;
+    }
   }
 }

@@ -22,10 +22,6 @@ function toggleNav() {
     }
 }
 
-// burger.addEventListener("click", () => {
-//     toggleNav();
-// })
-
 headerNav.addEventListener("click", (e) => {
     if (e.target == burger || e.target.parentElement == burger || e.target.classList.contains("header__link") && isMenuOpen()) toggleNav()
 });
@@ -64,7 +60,7 @@ const sendMail = (mail) => {
   
     }).then((response) => {
       return response.json();
-    });
+    }).catch(e => console.log(e));
   };
 
 const formEvent = form.addEventListener("submit", (event) => {
@@ -75,6 +71,19 @@ const formEvent = form.addEventListener("submit", (event) => {
     sendMail(mail);
 })
 
+// FORM MESSAGE AUTO RESIZE
+const formMessage = document.getElementById("form-message");
+formMessage.setAttribute("style", "height:" + (formMessage.scrollHeight) + "px;overflow-y:hidden;");
+formMessage.addEventListener("input", OnInput, false);
+
+function OnInput() {
+  this.style.height = "auto";
+  this.style.height = (this.scrollHeight) + "px";
+}
+
 
 
 // SECTION OBSERVERS
+
+
+
