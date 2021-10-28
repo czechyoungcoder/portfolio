@@ -60,7 +60,7 @@ const sendMail = (mail) => {
   
     }).then((response) => {
       return response.json();
-    }).catch(e => console.log(e));
+    }).then(s => console.log(s)).catch(e => console.log(e));
   };
 
 const formEvent = form.addEventListener("submit", (event) => {
