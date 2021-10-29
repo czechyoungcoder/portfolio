@@ -43,5 +43,16 @@
         "description": "Stránka, kterou jsem vytvořil pouze se zadaným mockup designem. Skvělé front-end cvičení ze stránky <a href=\"https://www.frontendmentor.io/\">Frontend Mentor</a>."
       }
     }
+  },
+  "contact": {
+    "labelName": "Tvé jméno",
+    "labelEmail": "Tvůj email",
+    "labelSubject": "Předmět",
+    "labelMessage": "Zpráva",
+    "placeholderName": "Napiš své jméno",
+    "placeholderEmail": "Napiš svůj email",
+    "placeholderSubject": "Napiš předmět zprávy",
+    "placeholderMessage": "Ahoj, rád bych s tebou pracoval...",
+    "sendMessage": "Odeslat zprávu"
   }
 }

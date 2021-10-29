@@ -43,5 +43,16 @@
                 "description": "A website I built with nothing but given mockup designs. A great front-end exercise from <a href=\"https://www.frontendmentor.io/\">Frontend Mentor</a>."
             }
         }
+    },
+    "contact": {
+        "labelName": "Your Name",
+        "labelEmail": "Your Email",
+        "labelSubject": "Subject",
+        "labelMessage": "Message",
+        "placeholderName": "Write your name",
+        "placeholderEmail": "Write your email",
+        "placeholderSubject": "Write the subject",
+        "placeholderMessage": "Hey, I'd like to work with you...",
+        "sendMessage": "Send Message"
     }
 }

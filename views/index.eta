@@ -194,30 +194,34 @@
         
     </section>
 
-    <section class="contact container" id="<%= formatToHash(it.links.contact) %>">
-        <h2 class="heading-secondary"><%= it.links.contact %></h2>
-        <form class="form container-medium" id="contact-form" action="send" method="post" enctype="multipart/form-data">
-            <div class="form__data">
-                <div class="form__group">
-                    <label class="form__label" for="name">Your Name</label>
-                    <input class="form__input" name="name" type="text" required>
+    <section class="contact" id="<%= formatToHash(it.links.contact) %>">
+        <div class="container">
+            <h2 class="heading-secondary"><%= it.links.contact %></h2>
+            <form class="form container-medium" id="contact-form" action="send" method="post" enctype="multipart/form-data">
+                <div class="form__data">
+                    <div class="form__group">
+                        <label class="form__label" for="name"><%= it.contact.labelName %></label>
+                        <input class="form__input" name="name" type="text" placeholder="<%= it.contact.placeholderName %>" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="email"><%= it.contact.labelEmail %></label>
+                        <input class="form__input" name="email" type="email" placeholder="<%= it.contact.placeholderEmail %>" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="subject"><%= it.contact.labelSubject %></label>
+                        <input class="form__input" name="subject" type="text" placeholder="<%= it.contact.placeholderSubject %>">
+                    </div>
                 </div>
                 <div class="form__group">
-                    <label class="form__label" for="email">Your Email</label>
-                    <input class="form__input" name="email" type="email" required>
+                    <label class="form__label" for="message"><%= it.contact.labelMessage %></label>
+                    <textarea class="form__message" id="form-message" name="message" placeholder="Hey, I would like to work with you..." required></textarea>
                 </div>
-                <div class="form__group">
-                    <label class="form__label" for="subject">Subject</label>
-                    <input class="form__input" name="subject" type="text">
-                </div>
-            </div>
-            <div class="form__group">
-                <label class="form__label" for="message">Message</label>
-                <textarea class="form__message" id="form-message" name="message" placeholder="Hey, I would like to work with you..." required></textarea>
-            </div>
-            
-            <button type="submit" value="submit">Send that shit!</button>
-        </form>
+                <button type="submit" class="form__button" value="submit"><%= it.contact.sendMessage %></button>
+                <p class="form__submit-message" id="submit-message"></p>
+        
+            </form>
+        </div>
+        
     </section>
     
 <script src="/index.js"></script>

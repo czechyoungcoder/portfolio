@@ -1,3 +1,5 @@
+const language = document.documentElement.getAttribute("lang");
+
 // HEADER NAV
 const burger = document.querySelector(".nav-menu");
 const headerNav = document.querySelector(".header__nav");
@@ -34,7 +36,7 @@ const workButtons = document.querySelectorAll(".work__button");
 workButtons.forEach(btn => btn.addEventListener("click", function() {
     if (isDetailsOpen(this)) {
         this.parentElement.classList.remove("open");
-        if (window.location.pathname.includes("cs")) {
+        if (language === "cs") {
             this.firstChild.textContent = "otevři detaily";    
         } else {
             this.firstChild.textContent = "show details";
@@ -42,7 +44,7 @@ workButtons.forEach(btn => btn.addEventListener("click", function() {
     }
     else { 
         this.parentElement.classList.add("open");
-        if (window.location.pathname.includes("cs")) {
+        if (language === "cs") {
             this.firstChild.textContent = "zavři detaily";    
         } else {
             this.firstChild.textContent = "hide details";
@@ -50,32 +52,37 @@ workButtons.forEach(btn => btn.addEventListener("click", function() {
     }
 }))
 
+
 // FORM
 const form = document.getElementById("contact-form");
+const submitMessage = document.getElementById("submit-message");
 
 const sendMail = (mail) => {
     fetch("http://localhost:3000/send", {
       method: "post",
       body: mail,
     }).then((response) => {
-        console.log(response);
-        alert("An email was successfully sent!")
+        if (language === "cs") submitMessage.textContent = "Zpráva byla úspěšně doručena!";
+        else submitMessage.textContent = "The message was successfully sent!";
+        form.reset();
     }).catch(err => {
-        console.log(err);
+        if (language === "cs") submitMessage.textContent = "Zprávu nebylo možné odeslat... Zkus to později.";
+        else submitMessage.textContent = "An error occured while sending the message... Try it again later.";
     })
   };
 
 const formEvent = form.addEventListener("submit", (event) => {
     event.preventDefault();
+    if (language === "cs") submitMessage.textContent = "Zpráva je na cestě...";
+    else submitMessage.textContent = "The message is on the way...";
 
     let mail = new FormData(form);
-
     sendMail(mail);
 })
 
 // FORM MESSAGE AUTO RESIZE
 const formMessage = document.getElementById("form-message");
-formMessage.setAttribute("style", "height:" + (formMessage.scrollHeight) + "px;overflow-y:hidden;");
+formMessage.setAttribute("style", "height:" + (formMessage.scrollHeight) + "px");
 formMessage.addEventListener("input", OnInput, false);
 
 function OnInput() {
