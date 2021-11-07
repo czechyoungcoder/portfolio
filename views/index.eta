@@ -65,9 +65,9 @@
             <div class="work__project">
                 <h3 class="work__title heading-tertiary"><%= it.work.projects.todoList.title %></h3>
                 <div class="work__links">
-                    <a href="" class="work__showcase"><%= it.work.livePreview %></a>
+                    <a href="https://czechyoungcoder-todolist.netlify.app/" class="work__showcase"><%= it.work.livePreview %></a>
                     <span class="work__divider"></span>
-                    <a href="" class="work__source-code"><%= it.work.sourceCode %></a>
+                    <a href="https://github.com/czechyoungcoder/todo-list" class="work__source-code"><%= it.work.sourceCode %></a>
                 </div>
                 <button class="work__button"><%= it.work.showDetails %> <i class="arrow"></i></button>
                 <div class="work__details">
@@ -90,9 +90,9 @@
             <div class="work__project">
                 <h3 class="work__title heading-tertiary"><%= it.work.projects.calculator.title %></h3>
                 <div class="work__links">
-                    <a href="" class="work__showcase"><%= it.work.livePreview %></a>
+                    <a href="https://czechcoder-calculator.netlify.app/" class="work__showcase"><%= it.work.livePreview %></a>
                     <span class="work__divider"></span>
-                    <a href="" class="work__source-code"><%= it.work.sourceCode %></a>
+                    <a href="https://github.com/czechyoungcoder/js-calculator" class="work__source-code"><%= it.work.sourceCode %></a>
                 </div>
                 <button class="work__button"><%= it.work.showDetails %> <i class="arrow"></i></button>
                 <div class="work__details">
@@ -115,9 +115,9 @@
             <div class="work__project">
                 <h3 class="work__title heading-tertiary"><%= it.work.projects.movieFight.title %></h3>
                 <div class="work__links">
-                    <a href="" class="work__showcase"><%= it.work.livePreview %></a>
+                    <a href="https://udemy-movie-fight.netlify.app/" class="work__showcase"><%= it.work.livePreview %></a>
                     <span class="work__divider"></span>
-                    <a href="" class="work__source-code"><%= it.work.sourceCode %></a>
+                    <a href="https://github.com/czechyoungcoder/movie-fight" class="work__source-code"><%= it.work.sourceCode %></a>
                 </div>
                 <button class="work__button"><%= it.work.showDetails %> <i class="arrow"></i></button>
                 <div class="work__details">
@@ -140,9 +140,9 @@
             <div class="work__project">
                 <h3 class="work__title heading-tertiary"><%= it.work.projects.natours.title %></h3>
                 <div class="work__links">
-                    <a href="" class="work__showcase"><%= it.work.livePreview %></a>
+                    <a href="https://udemy-natours.netlify.app/" class="work__showcase"><%= it.work.livePreview %></a>
                     <span class="work__divider"></span>
-                    <a href="" class="work__source-code"><%= it.work.sourceCode %></a>
+                    <a href="https://github.com/czechyoungcoder/Natours" class="work__source-code"><%= it.work.sourceCode %></a>
                 </div>
                 <button class="work__button"><%= it.work.showDetails %> <i class="arrow"></i></button>
                 <div class="work__details">
@@ -165,9 +165,9 @@
             <div class="work__project">
                 <h3 class="work__title heading-tertiary"><%= it.work.projects.clipboard.title %></h3>
                 <div class="work__links">
-                    <a href="" class="work__showcase"><%= it.work.livePreview %></a>
+                    <a href="https://czechcoder-clipboard-landing-page.netlify.app/" class="work__showcase"><%= it.work.livePreview %></a>
                     <span class="work__divider"></span>
-                    <a href="" class="work__source-code"><%= it.work.sourceCode %></a>
+                    <a href="https://github.com/czechyoungcoder/FEM-clipboard-landing-page" class="work__source-code"><%= it.work.sourceCode %></a>
                 </div>
                 <button class="work__button"><%= it.work.showDetails %> <i class="arrow"></i></button>
                 <div class="work__details">
@@ -214,11 +214,10 @@
                 </div>
                 <div class="form__group">
                     <label class="form__label" for="message"><%= it.contact.labelMessage %></label>
-                    <textarea class="form__message" id="form-message" name="message" placeholder="Hey, I would like to work with you..." required></textarea>
+                    <textarea class="form__message" id="form-message" name="message" placeholder="<%= it.contact.placeholderMessage %>" required></textarea>
                 </div>
                 <button type="submit" class="form__button" value="submit"><%= it.contact.sendMessage %></button>
                 <p class="form__submit-message" id="submit-message"></p>
-        
             </form>
         </div>
         
