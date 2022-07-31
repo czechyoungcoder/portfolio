@@ -90,9 +90,35 @@ function OnInput() {
   this.style.height = (this.scrollHeight) + "px";
 }
 
-
-
 // SECTION OBSERVERS
+
+aboutSectionObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("aboutSectionAnimation", entry.isIntersecting);
+        if (entry.isIntersecting) aboutSectionObserver.unobserve(entry.target);
+    });
+    
+}, {threshold: .6})
+
+
+const aboutSection = document.querySelector(".about");
+aboutSectionObserver.observe(aboutSection);
+
+contactSectionObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("contactSectionAnimation", entry.isIntersecting);
+        const socials = document.querySelectorAll(".socials__icon");
+        socials.forEach((social, i) => {
+            social.style.animation = `animateSocial 1s ${6 + i / 5}s forwards`;      
+        })  
+
+        if (entry.isIntersecting) contactSectionObserver.unobserve(entry.target);
+    }) 
+}, {rootMargin: "-10%"})
+
+
+const contactSection = document.querySelector(".contact");
+contactSectionObserver.observe(contactSection);
 
 
 

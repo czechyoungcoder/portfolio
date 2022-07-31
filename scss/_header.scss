@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     padding: 3rem 3rem;
-    margin: 0;
+    margin: 0 auto;
     position: relative;
     z-index: 100;
     font-size: 1.5rem;
@@ -18,9 +18,11 @@
       bottom: 0;
       background: transparentize($primary-color, 0.01)
     }
+
     &.open::before {
       animation: navOpenFirst $nav-cb .3s forwards;
     }
+
     &.close::before {
       animation: navCloseFirst $nav-cb .3s forwards;
     }
@@ -33,10 +35,12 @@
       bottom: 0;
       background: transparentize($secondary-color, 0.01)
     }
+
     &.open::after {
       animation: navOpenSecond $nav-cb .4s forwards;
       animation-delay: .2s;
     }
+
     &.close::after {
       animation: navCloseSecond $nav-cb .3s forwards;
     }
@@ -60,7 +64,7 @@
         opacity: 0;
         transform: translateX(30vw);
         margin: clamp(.5rem, 5vh, 2rem) 0;
-        
+
       }
 
       @for $i from 1 through 3 {
@@ -82,6 +86,7 @@
       transform: translateX(30vw);
       opacity: 0;
     }
+
     to {
       filter: blur(0);
       transform: translateX(0);
@@ -93,30 +98,37 @@
     from {
       width: 0;
     }
+
     to {
       width: 58vw;
     }
   }
+
   @keyframes navCloseFirst {
     from {
       width: 58vw;
     }
+
     to {
       width: 0;
     }
   }
+
   @keyframes navOpenSecond {
     from {
       width: 0;
     }
+
     to {
       width: 42vw;
     }
   }
+
   @keyframes navCloseSecond {
     from {
       width: 42vw;
     }
+
     to {
       width: 0;
     }
@@ -136,6 +148,7 @@
     .first {
       transition: all .2s;
     }
+
     .last {
       transition: all .3s;
       font-size: 1.4rem;
@@ -143,9 +156,11 @@
 
     &.inverse {
       color: $primary-color;
+
       .first {
         font-size: 2.1rem;
       }
+
       .last {
         font-weight: 700;
         font-size: 1.5rem;
@@ -155,6 +170,7 @@
     .first {
       font-weight: 700;
     }
+
     .last {
       color: $white;
     }
@@ -170,7 +186,7 @@
 
     @include breakpoint-down(small) {
       display: none;
-    }    
+    }
   }
 
   &__item {
@@ -197,9 +213,10 @@
       transition: opacity 300ms, transform 300ms;
     }
 
-    &:hover::after, &:focus::after {
-	    opacity: 1;
-	    transform: translate3d(0, .25em, 0);
+    &:hover::after,
+    &:focus::after {
+      opacity: 1;
+      transform: translate3d(0, .25em, 0);
     }
   }
 
@@ -211,7 +228,7 @@
     transform: rotate(0deg);
     cursor: pointer;
     transform: scale(0.85);
-    
+
     @include breakpoint-up(medium) {
       display: none;
     }
@@ -227,29 +244,36 @@
       left: 0;
       transform: rotate(0deg);
       transition: .25s ease-in-out;
-      
+
       &:nth-child(1) {
         top: 0;
       }
-      &:nth-child(2), &:nth-child(3) {
+
+      &:nth-child(2),
+      &:nth-child(3) {
         top: 9px;
       }
+
       &:nth-child(4) {
         top: 18px;
       }
     }
   }
+
   .nav-menu.open span:nth-child(1) {
     top: 9px;
     width: 0%;
     left: 50%;
   }
+
   .nav-menu.open span:nth-child(2) {
     transform: rotate(45deg);
   }
+
   .nav-menu.open span:nth-child(3) {
     transform: rotate(-45deg);
   }
+
   .nav-menu.open span:nth-child(4) {
     top: 9px;
     width: 0;
@@ -272,7 +296,8 @@
       transition: color .2s ease-in-out;
       cursor: pointer;
 
-      &.active, &:hover {
+      &.active,
+      &:hover {
         color: #fff;
       }
     }

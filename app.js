@@ -16,7 +16,7 @@ app.use(express.static(__dirname + '/public'));
 
 // NODEMAILER
 const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
+  host: "smtp.zoho.eu",
   port: 465,
   secure: true,
   auth: {

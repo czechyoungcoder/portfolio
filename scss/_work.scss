@@ -5,9 +5,7 @@
     display: none;
   }
 
-  1% {
-
-  }
+  1% {}
 
   100% {
     opacity: 1;
@@ -26,12 +24,10 @@
     color: lighten($primary-color, 30%);
   }
 
-  &__projects {
+  &__projects {}
 
-  }
-  
   &__project {
-    
+
     &:not(:last-child) {
       margin: 3rem 0 5rem;
     }
@@ -47,7 +43,7 @@
       padding: 3rem 3.5rem 4rem;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: 
+      grid-template-areas:
         "title links"
         "details details"
         "details details"
@@ -67,13 +63,14 @@
           padding: 4rem 0 2rem;
         }
       }
-      
+
       .work__button {
         .arrow {
           transform: rotate(-135deg) translate(-2px, -2px);
         }
 
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           .arrow {
             transform: rotate(-135deg) translate(-1px, -1px);
           }
@@ -96,7 +93,7 @@
     font-weight: 600;
     text-transform: uppercase;
     border-radius: .5em;
-    border: none; 
+    border: none;
     cursor: pointer;
     color: $dark-blue;
     background: $yellow;
@@ -109,15 +106,16 @@
       right: .9em;
       top: .8em;
       display: inline-block;
-    
+
       padding: 3px;
       border: solid $dark-blue;
       border-width: 0 3px 3px 0;
       transition: transform .5s ease-in-out;
       transform: rotate(45deg) translate(-1px, -1px);
     }
-    
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
       box-shadow: rgba($yellow, 0.2) 0px .35em 1.15em .1em;
       opacity: 1;
 
@@ -186,19 +184,21 @@
     @include breakpoint-up(large) {
       display: grid;
       grid-gap: 2rem;
-      grid-template-areas: 
-      "description image"
-      "tools image"
+      grid-template-areas:
+        "description image"
+        "tools image"
     }
   }
 
   &__description {
     grid-area: description;
-    
+
     a {
       color: #eee;
       text-shadow: 0 0 .05em #eee;
-      &:hover, &:active {
+
+      &:hover,
+      &:active {
         color: #fff;
       }
     }
@@ -210,7 +210,7 @@
     display: block;
     margin-left: auto;
     margin-left: right;
-    
+
 
     @include breakpoint-down(medium) {
       margin: 3rem auto 2rem;
@@ -223,6 +223,7 @@
     p {
       color: lighten($secondary-color, 10%);
     }
+
     a {
       color: inherit;
     }
@@ -237,11 +238,11 @@
     text-align: center;
     border-radius: 1rem;
     transition: box-shadow .25s ease-in-out;
-    
+
     &:hover {
       box-shadow: rgba($secondary-color, 0.16) 0 1rem 3.6rem 0, rgba($primary-color, 0.06) 0 0 0 .1rem;
     }
-    
+
     .plus {
       color: $secondary-color;
       font-size: 5rem;

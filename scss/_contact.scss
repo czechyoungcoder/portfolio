@@ -1,15 +1,20 @@
+$ballSizeSmall: 3rem;
+$ballSizeMedium: 5rem;
+$ballSizeLarge: 7rem;
+
 .contact {
   text-align: left;
   background: #3A36A2;
   transform: skewY(7deg);
   position: relative;
 
-  & > * {
+  &>* {
     transform: skewY(-7deg);
   }
 
   .container {
     padding-bottom: 5rem;
+    margin-bottom: 5rem;
   }
 
   h2 {
@@ -17,17 +22,67 @@
     margin-top: 2rem;
   }
 
-  &::before {
+  &::after {
+
     position: absolute;
     content: "";
-    width: 50px;
-    height: 50px;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: $ballSizeSmall;
+    background: darken(#3A36A2, 30%);
+    border-bottom: solid $red .8rem;
+
+    @include breakpoint-up(medium) {
+      width: $ballSizeMedium;
+    }
+
+    @include breakpoint-up(large) {
+      width: $ballSizeLarge;
+    }
+  }
+
+  &::before {
+    z-index: 100;
+    position: absolute;
+    content: "";
+    width: $ballSizeSmall;
+    height: $ballSizeSmall;
     background: yellow;
     transform: skewY(-7deg);
     border-radius: 50%;
-    top: -50px;
+    top: -$ballSizeSmall;
+
+    @include breakpoint-up(medium) {
+      width: $ballSizeMedium;
+      height: $ballSizeMedium;
+      top: -$ballSizeMedium;
+    }
+
+    @include breakpoint-up(large) {
+      width: $ballSizeLarge;
+      height: $ballSizeLarge;
+      top: -$ballSizeLarge;
+    }
+  }
+
+  &.contactSectionAnimation {
+    &::before {
+      animation: animateBallContact ease-in 5s forwards;
+    }
   }
 }
+
+@include animateBallContact($ballSizeSmall);
+
+@include breakpoint-up(medium) {
+  @include animateBallContact($ballSizeMedium);
+}
+
+@include breakpoint-up(large) {
+  @include animateBallContact($ballSizeLarge);
+}
+
 
 .form {
   margin: 3rem auto;
@@ -36,7 +91,7 @@
     text-align: center;
     margin: 2rem 0;
 
-    &:hover > label {
+    &:hover>label {
       color: #fff;
     }
   }
@@ -46,23 +101,42 @@
     display: block;
     width: 90%;
     margin: auto;
+    margin-right: $ballSizeSmall;
     text-align: left;
     font-size: 1.4rem;
     margin: .25rem auto;
+
+    @include breakpoint-up(medium) {
+      margin-right: $ballSizeMedium;
+    }
+
+    @include breakpoint-up(medium) {
+      margin-right: $ballSizeLarge;
+    }
   }
 
-  &__input, &__message {
+  &__input,
+  &__message {
     width: 90%;
     border-radius: 2rem;
     padding: 1rem 2rem;
     margin: 0.5rem auto;
+    margin-right: $ballSizeSmall;
     font-size: 1.5rem;
     font-family: inherit;
     font-weight: 500;
     color: $dark-black;
     border: none;
     transition: all .3s;
-    
+
+    @include breakpoint-up(medium) {
+      margin-right: $ballSizeMedium;
+    }
+
+    @include breakpoint-up(medium) {
+      margin-right: $ballSizeLarge;
+    }
+
 
     &:focus {
       outline: none;
@@ -72,19 +146,19 @@
 
   &__message {
     min-height: 10rem;
-    resize: vertical;    
+    resize: vertical;
 
     &::-webkit-scrollbar {
       width: 10px;
       position: relative;
       right: 20px;
     }
-  
+
     &::-webkit-scrollbar-track {
       background: darken($primary-color, 15%);
       border-radius: 1rem;
     }
-    
+
     &::-webkit-scrollbar-thumb {
       background: #888;
       border-radius: 1rem;
@@ -92,9 +166,11 @@
   }
 
   &__button {
+    position: relative;
     font-family: inherit;
     font-size: inherit;
     display: block;
+    right: $ballSizeSmall / 2;
     margin: 1rem auto 0;
     padding: 1rem 3rem;
     border-radius: 1rem;
@@ -104,25 +180,44 @@
     color: $primary-color;
     font-weight: 600;
     cursor: pointer;
-    box-shadow:  0 .7em 1.25em .25em rgba($secondary-color, 0.3);
+    box-shadow: 0 .7em 1.25em .25em rgba($secondary-color, 0.3);
     transition: all .15s ease-in-out;
 
-    &:hover, &:focus {
-      transform: scale(1.05);
-      box-shadow:  0 .7em 1.25em .25em rgba($secondary-color, 0.4);
+    @include breakpoint-up(medium) {
+      right: $ballSizeMedium / 2;
     }
 
-     &:active, &:visited {
+    @include breakpoint-up(large) {
+      right: $ballSizeLarge / 2;
+    }
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+      box-shadow: 0 .7em 1.25em .25em rgba($secondary-color, 0.4);
+    }
+
+    &:active,
+    &:visited {
       transform: translateY(4px);
-      box-shadow:  0 .5em 1em .25em darken(rgba($secondary-color, 0.3), 5%);
-     }
+      box-shadow: 0 .5em 1em .25em darken(rgba($secondary-color, 0.3), 5%);
+    }
   }
 
   &__submit-message {
     text-align: center;
     margin-top: 2rem;
+    margin-right: $ballSizeSmall;
+
+    @include breakpoint-up(medium) {
+      margin-right: $ballSizeMedium;
+    }
+
+    @include breakpoint-up(medium) {
+      margin-right: $ballSizeLarge;
+    }
   }
-  
+
   ::placeholder {
     color: #C0C0C0;
     font-weight: 400;

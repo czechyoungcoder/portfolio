@@ -2,13 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
+
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
   font-size: 62.5%;
   box-sizing: border-box;
 
   @include breakpoint-up(medium) {
-   font-size: 68.75%;
+    font-size: 68.75%;
   }
 
   @include breakpoint-up(large) {
@@ -16,11 +18,15 @@ html {
   }
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-nav, ul, li {
+nav,
+ul,
+li {
   margin: 0;
 }
 
@@ -28,10 +34,11 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1.6rem;
-  min-height: 600vh;
   font-family: 'Poppins', sans-serif;
   background: $body-background;
   color: $white;
+  overflow-x: hidden;
+
   @include breakpoint-down(small) {
     text-align: center;
   }
@@ -47,7 +54,9 @@ body {
     padding-right: 4rem;
   }
 }
-.container-medium, .container-small {
+
+.container-medium,
+.container-small {
   margin-left: auto;
   margin-right: auto;
 }
@@ -73,7 +82,7 @@ body {
     bottom: -10%;
     height: .7em;
     border-radius: .3em;
-    
+
     background-color: rgba($primary-color, .4);
     z-index: -1;
   }
@@ -83,12 +92,16 @@ p {
   margin: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   margin-bottom: .5em;
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   margin: 0;
   margin-bottom: .2em;
 }
