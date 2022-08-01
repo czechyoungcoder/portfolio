@@ -68,7 +68,7 @@ app.post("/send", (req, res) => {
     });
 
     const mail = {
-      from: data.name,
+      from: process.env.EMAIL,
       to: process.env.EMAIL,
       subject: data.subject,
       text: `${data.name} <${data.email}> \n${data.message}`,
@@ -94,4 +94,3 @@ app.get('/:lang', function (req, res) {
 app.listen(process.env.PORT || 3000, () => {
   console.log('Server running on port 3000');
 });
-
