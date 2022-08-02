@@ -90,8 +90,8 @@ function OnInput() {
   this.style.height = (this.scrollHeight) + "px";
 }
 
-// SECTION OBSERVERS
 
+// SECTION OBSERVERS
 aboutSectionObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         entry.target.classList.toggle("aboutSectionAnimation", entry.isIntersecting);

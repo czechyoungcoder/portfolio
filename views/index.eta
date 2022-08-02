@@ -47,14 +47,14 @@
         </div>
         <div class="hero__text">
             <h1 class="heading-primary"><%= it.hero.name %></h1>
-            <h3 class="heading-tertiary text-highlight"><%= it.hero.profession %></h3>
+            <h3 class="heading-tertiary text-highlight"><%~ it.hero.profession %></h3>
         </div>
     </section>
     
     <section class="about container" id="<%= formatToHash(it.links.aboutMe) %>">
         <div class="container-small">
             <h2 class="heading-secondary"><%= it.links.aboutMe %></h2>
-            <p><%= it.about.description %></p>
+            <p><%~ it.about.description %></p>
         </div>
     </section>
 
@@ -66,9 +66,9 @@
             <div class="work__project">
                 <h3 class="work__title heading-tertiary"><%= it.work.projects.todoList.title %></h3>
                 <div class="work__links">
-                    <a href="https://czechcoder-todolist.netlify.app/" class="work__showcase"><%= it.work.livePreview %></a>
+                    <a href="https://czechcoder-todolist.netlify.app/" target="_blank" class="work__showcase"><%= it.work.livePreview %></a>
                     <span class="work__divider"></span>
-                    <a href="https://github.com/czechyoungcoder/todo-list" class="work__source-code"><%= it.work.sourceCode %></a>
+                    <a href="https://github.com/czechyoungcoder/todo-list" target="_blank" class="work__source-code"><%= it.work.sourceCode %></a>
                 </div>
                 <button class="work__button"><%= it.work.showDetails %> <i class="arrow"></i></button>
                 <div class="work__details">
@@ -91,9 +91,9 @@
             <div class="work__project">
                 <h3 class="work__title heading-tertiary"><%= it.work.projects.calculator.title %></h3>
                 <div class="work__links">
-                    <a href="https://czechcoder-calculator.netlify.app/" class="work__showcase"><%= it.work.livePreview %></a>
+                    <a href="https://czechcoder-calculator.netlify.app/" target="_blank" class="work__showcase"><%= it.work.livePreview %></a>
                     <span class="work__divider"></span>
-                    <a href="https://github.com/czechyoungcoder/js-calculator" class="work__source-code"><%= it.work.sourceCode %></a>
+                    <a href="https://github.com/czechyoungcoder/js-calculator" target="_blank" class="work__source-code"><%= it.work.sourceCode %></a>
                 </div>
                 <button class="work__button"><%= it.work.showDetails %> <i class="arrow"></i></button>
                 <div class="work__details">
@@ -116,9 +116,9 @@
             <div class="work__project">
                 <h3 class="work__title heading-tertiary"><%= it.work.projects.movieFight.title %></h3>
                 <div class="work__links">
-                    <a href="https://czechcoder-movie-fight.netlify.app/" class="work__showcase"><%= it.work.livePreview %></a>
+                    <a href="https://czechcoder-movie-fight.netlify.app/" target="_blank" class="work__showcase"><%= it.work.livePreview %></a>
                     <span class="work__divider"></span>
-                    <a href="https://github.com/czechyoungcoder/movie-fight" class="work__source-code"><%= it.work.sourceCode %></a>
+                    <a href="https://github.com/czechyoungcoder/movie-fight" target="_blank" class="work__source-code"><%= it.work.sourceCode %></a>
                 </div>
                 <button class="work__button"><%= it.work.showDetails %> <i class="arrow"></i></button>
                 <div class="work__details">
@@ -141,9 +141,9 @@
             <div class="work__project">
                 <h3 class="work__title heading-tertiary"><%= it.work.projects.natours.title %></h3>
                 <div class="work__links">
-                    <a href="https://czechcoder-natours.netlify.app/" class="work__showcase"><%= it.work.livePreview %></a>
+                    <a href="https://czechcoder-natours.netlify.app/" target="_blank" class="work__showcase"><%= it.work.livePreview %></a>
                     <span class="work__divider"></span>
-                    <a href="https://github.com/czechyoungcoder/Natours" class="work__source-code"><%= it.work.sourceCode %></a>
+                    <a href="https://github.com/czechyoungcoder/Natours" target="_blank" class="work__source-code"><%= it.work.sourceCode %></a>
                 </div>
                 <button class="work__button"><%= it.work.showDetails %> <i class="arrow"></i></button>
                 <div class="work__details">
@@ -166,9 +166,9 @@
             <div class="work__project">
                 <h3 class="work__title heading-tertiary"><%= it.work.projects.clipboard.title %></h3>
                 <div class="work__links">
-                    <a href="https://czechcoder-clipboard-landing-page.netlify.app/" class="work__showcase"><%= it.work.livePreview %></a>
+                    <a href="https://czechcoder-clipboard-landing-page.netlify.app/" target="_blank" class="work__showcase"><%= it.work.livePreview %></a>
                     <span class="work__divider"></span>
-                    <a href="https://github.com/czechyoungcoder/FEM-clipboard-landing-page" class="work__source-code"><%= it.work.sourceCode %></a>
+                    <a href="https://github.com/czechyoungcoder/FEM-clipboard-landing-page" target="_blank" class="work__source-code"><%= it.work.sourceCode %></a>
                 </div>
                 <button class="work__button"><%= it.work.showDetails %> <i class="arrow"></i></button>
                 <div class="work__details">
@@ -224,11 +224,11 @@
     </section>
 
     <section class="socials container-small">
-        <a href="https://github.com/czechyoungcoder" class="socials__icon"><i class="fa-brands fa-github fa-xl"></i></a>
-        <a class="socials__icon"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a class="socials__icon"><i class="fa-brands fa-telegram"></i></a>
-        <a class="socials__icon"><i class="fa-brands fa-instagram"></i></a>
-        <a class="socials__icon"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.github.com/czechyoungcoder" target="_blank" class="socials__icon"><i class="fa-brands fa-github fa-xl"></i></a>
+        <a href="https://www.linkedin.com/in/czechcoder" target="_blank" class="socials__icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.t.me/czechcoder" target="_blank" class="socials__icon"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://www.instagram.com/czechcoder" target="_blank" class="socials__icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.twitter.com/czechcoder" target="_blank" class="socials__icon"><i class="fa-brands fa-twitter"></i></a>
     </section>
     
 <script src="/index.js"></script>
