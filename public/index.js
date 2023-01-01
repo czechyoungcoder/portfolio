@@ -58,7 +58,7 @@ const form = document.getElementById("contact-form");
 const submitMessage = document.getElementById("submit-message");
 
 const sendMail = (mail) => {
-    fetch("https://portfolio-test-project.herokuapp.com/send", {
+    fetch("https://czechcoder.com/send", {
       method: "post",
       body: mail,
     }).then((response) => {
