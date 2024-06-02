@@ -4,11 +4,11 @@ $ballSizeLarge: 7rem;
 
 .contact {
   text-align: left;
-  background: #3A36A2;
+  background: #3a36a2;
   transform: skewY(7deg);
   position: relative;
 
-  &>* {
+  & > * {
     transform: skewY(-7deg);
   }
 
@@ -23,15 +23,14 @@ $ballSizeLarge: 7rem;
   }
 
   &::after {
-
     position: absolute;
     content: "";
     right: 0;
     top: 0;
     height: 100%;
     width: $ballSizeSmall;
-    background: darken(#3A36A2, 30%);
-    border-bottom: solid $red .8rem;
+    background: darken(#3a36a2, 30%);
+    border-bottom: solid $red 0.8rem;
 
     @include breakpoint-up(medium) {
       width: $ballSizeMedium;
@@ -83,7 +82,6 @@ $ballSizeLarge: 7rem;
   @include animateBallContact($ballSizeLarge);
 }
 
-
 .form {
   margin: 3rem auto;
 
@@ -91,20 +89,24 @@ $ballSizeLarge: 7rem;
     text-align: center;
     margin: 2rem 0;
 
-    &:hover>label {
+    &:hover > label {
       color: #fff;
+    }
+
+    &-honeypot {
+      display: none;
     }
   }
 
   &__label {
-    color: #DDDEFC;
+    color: #dddefc;
     display: block;
     width: 90%;
     margin: auto;
     margin-right: $ballSizeSmall;
     text-align: left;
     font-size: 1.4rem;
-    margin: .25rem auto;
+    margin: 0.25rem auto;
 
     @include breakpoint-up(medium) {
       margin-right: $ballSizeMedium;
@@ -127,7 +129,7 @@ $ballSizeLarge: 7rem;
     font-weight: 500;
     color: $dark-black;
     border: none;
-    transition: all .3s;
+    transition: all 0.3s;
 
     @include breakpoint-up(medium) {
       margin-right: $ballSizeMedium;
@@ -137,10 +139,9 @@ $ballSizeLarge: 7rem;
       margin-right: $ballSizeLarge;
     }
 
-
     &:focus {
       outline: none;
-      box-shadow: 0 .75rem 1rem darken(rgba($secondary-color, .8), 10%);
+      box-shadow: 0 0.75rem 1rem darken(rgba($secondary-color, 0.8), 10%);
     }
   }
 
@@ -180,8 +181,8 @@ $ballSizeLarge: 7rem;
     color: $primary-color;
     font-weight: 600;
     cursor: pointer;
-    box-shadow: 0 .7em 1.25em .25em rgba($secondary-color, 0.3);
-    transition: all .15s ease-in-out;
+    box-shadow: 0 0.7em 1.25em 0.25em rgba($secondary-color, 0.3);
+    transition: all 0.15s ease-in-out;
 
     @include breakpoint-up(medium) {
       right: $ballSizeMedium / 2;
@@ -194,13 +195,13 @@ $ballSizeLarge: 7rem;
     &:hover,
     &:focus {
       transform: scale(1.05);
-      box-shadow: 0 .7em 1.25em .25em rgba($secondary-color, 0.4);
+      box-shadow: 0 0.7em 1.25em 0.25em rgba($secondary-color, 0.4);
     }
 
     &:active,
     &:visited {
       transform: translateY(4px);
-      box-shadow: 0 .5em 1em .25em darken(rgba($secondary-color, 0.3), 5%);
+      box-shadow: 0 0.5em 1em 0.25em darken(rgba($secondary-color, 0.3), 5%);
     }
   }
 
@@ -219,7 +220,7 @@ $ballSizeLarge: 7rem;
   }
 
   ::placeholder {
-    color: #C0C0C0;
+    color: #c0c0c0;
     font-weight: 400;
     font-size: 1.4rem;
   }

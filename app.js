@@ -1,26 +1,27 @@
-const express = require('express'),
-      nodemailer = require("nodemailer"),
-      multiparty = require("multiparty"),
-      cookieParser = require('cookie-parser'),
-      smws = require("smws"),
-      app = express();
+const express = require("express"),
+  nodemailer = require("nodemailer"),
+  multiparty = require("multiparty"),
+  cookieParser = require("cookie-parser"),
+  eta = require("eta"),
+  smws = require("smws"),
+  app = express();
 
 require("dotenv").config();
 
-app.set('view engine', 'eta');
+app.set("view engine", "eta");
 
-app.use(function(req, res, next) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-  res.setHeader('Access-Control-Allow-Credentials', true);
+app.use(function (req, res, next) {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  res.setHeader("Access-Control-Allow-Credentials", true);
   next();
 });
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cookieParser());
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + "/public"));
 
 // NODEMAILER
 const transporter = nodemailer.createTransport({
@@ -42,28 +43,31 @@ transporter.verify((error, success) => {
   }
 });
 
-
 // SMWS CONFIG
 smws.config({
-  languages: ['cs','en'],
-  defaultLang: 'en'
+  languages: ["cs", "en"],
+  defaultLang: "en",
 });
 
-app.post('/:lang/language', (req,res) => {
-  smws.switcher(req,res);
+app.post("/:lang/language", (req, res) => {
+  smws.switcher(req, res);
 });
 
-app.get('/', (req, res) => {
+app.get("/", (req, res) => {
   smws.run(req, res, {
-      page: 'index'
+    page: "index",
   });
 });
 
 app.post("/send", (req, res) => {
+  if (req.body.honeypot) {
+    console.log("Honeypot field filled out. Possiible bot submission.");
+    res.status(400).send("Bot submission detected.");
+  }
   let form = new multiparty.Form();
   let data = {};
   form.parse(req, (err, fields) => {
-    Object.keys(fields).forEach(property => {
+    Object.keys(fields).forEach((property) => {
       data[property] = fields[property].toString();
     });
 
@@ -85,12 +89,12 @@ app.post("/send", (req, res) => {
   });
 });
 
-app.get('/:lang', function (req, res) {
+app.get("/:lang", function (req, res) {
   smws.run(req, res, {
-      page: 'index'
+    page: "index",
   });
 });
 
 app.listen(process.env.PORT || 3000, () => {
-  console.log('Server running on port 3000');
+  console.log("Server running on port 3000");
 });

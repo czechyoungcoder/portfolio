@@ -9,7 +9,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title>Jakub | Web Portfolio</title>
@@ -203,6 +202,10 @@
                     <div class="form__group">
                         <label class="form__label" for="name"><%= it.contact.labelName %></label>
                         <input class="form__input" name="name" type="text" placeholder="<%= it.contact.placeholderName %>" required>
+                    </div>
+                    <div class="form__group form__group-honeypot" >
+                        <label class="form__label" for="honeypot">Honeypot:</label>
+                        <input class="form__input" name="honeypot" type="text">
                     </div>
                     <div class="form__group">
                         <label class="form__label" for="email"><%= it.contact.labelEmail %></label>
