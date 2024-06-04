@@ -8,15 +8,15 @@
     "contact": "Kontakt"
   },
   "about": {
-    "description": "<strong>Jsem 17letý kluk, kterého baví dělat webovky a vyvíjet moderní software.</strong> Právě studuji výpočetní střední školu, ale drtivou většinu těchto dovedností jsem se díky dnešním rozšířeným zdrojům na internetu naučil především sám."
+    "description": "<strong>Jsem 19letý kluk, kterého baví dělat webovky a vyvíjet moderní software.</strong> Čerstvě jsem dostudoval IT střední školu a plánuji pokračovat se studiem, spoustu věcí jsem se však učil hlavně sám. Nejvíce zkušeností v programování mám ve formě webových technologií, ale rozhodně se nebráním ani jiným oblastem. :)"
   },
   "hero": {
     "name": "Ahoj, jsem Jakub.",
-    "profession": "Dělám webovky."
+    "profession": "vyvíjím software"
   },
   "work": {
     "about": "A tady jsou některé z mých projektů!",
-    "extra": "Také jsem pracoval nějakou tu dobu s <strong>back-end technologiemi</strong> jako jsou <strong>Node.js</strong> a <strong>MongoDB</strong> databáze. A dost mě baví různé <strong>programovací úlohy</strong>!",
+    "extra": "Pro vývoj webu dokážu využívat <strong>Angular framework</strong>. Mimo JavaScript (TypeScript) mám solidní znalost jazyka <strong>C#</strong>, ve kterém mám schopnosti budovat aplikace v <strong>ASP.NET</strong>, <strong>Entity Frameworku</strong> anebo <strong>Windows Forms</strong>. Nemám problém ani s databázemi, z nichž nejvíce času jsem věnoval studiu platformy <strong>MS-SQL</strong> a <strong>MySQL</strong>.",
     "livePreview": "Živá ukázka",
     "sourceCode": "Zdroják",
     "toolsUsed": "Použité nástroje",

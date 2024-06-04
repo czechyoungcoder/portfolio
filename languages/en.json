@@ -8,15 +8,15 @@
     "contact": "Contact"
   },
   "about": {
-    "description": "<strong>I'm a 17 year old boy who's passionate about building websites and is in love with modern software development.</strong> I'm currently studying computer science in high school, but I'm mostly self-taught as I believe that one can learn really anything with so many available resources on the internet, these days!"
+    "description": "<strong>I am a 19-year-old guy who enjoys creating websites and developing modern software.</strong> I recently graduated from an IT high school and plan to continue my studies, although I have mainly taught myself many things on my own. I have the most experience in web technologies, but I am definitely open to other areas as well. :)"
   },
   "hero": {
     "name": "Hi, I'm Jakub.",
-    "profession": "A web developer."
+    "profession": "a software developer"
   },
   "work": {
     "about": "And those are some of my projects!",
-    "extra": "I have spent quite a decent amount of time working with <strong>back-end technologies</strong> like <strong>Node.js</strong> and <strong>MongoDB</strong> database. And I loooove <strong>competitive programming</strong>!",
+    "extra": "For web development, I can freely use the <strong>Angular framework</strong>. Besides JavaScript (TypeScript), I have a solid knowledge of <strong>C#</strong>, in which I have the skills to build applications in <strong>ASP.NET</strong>, <strong>Entity Framework</strong>, and <strong>Windows Forms</strong>. I also have a good experience with databases, having spent the most time studying <strong>MS-SQL</strong> and <strong>MySQL</strong>.",
     "livePreview": "Live Preview",
     "sourceCode": "Source Code",
     "toolsUsed": "Tools used",
