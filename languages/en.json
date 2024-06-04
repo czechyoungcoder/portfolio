@@ -1,58 +1,70 @@
 {
-    "smws": {
-        "lang": "en"
-    },
-    "links": {
-        "aboutMe": "About me",
-        "myWork": "My work",
-        "contact": "Contact"
-    },
-    "about": {
-        "description": "<strong>I'm a 17 year old boy who's passionate about building websites and is in love with modern software development.</strong> I'm currently studying computer science in high school, but I'm mostly self-taught as I believe that one can learn really anything with so many available resources on the internet, these days!"
-    },
-    "hero": {
-        "name": "Hi, I'm Jakub.",
-        "profession": "A web developer."
-    },
-    "work": {
-        "about": "And those are some of my projects!",
-        "extra": "I have spent quite a decent amount of time working with <strong>back-end technologies</strong> like <strong>Node.js</strong> and <strong>MongoDB</strong> database. And I loooove <strong>competitive programming</strong>!",
-        "livePreview": "Live Preview",
-        "sourceCode": "Source Code",
-        "toolsUsed": "Tools used",
-        "showDetails": "Show Details",
-        "projects": {
-            "todoList": {
-                "title": "To-do List",
-                "description": "This application lets you create your digital to-dos so you can easily keep track of the things you need to get done. It all works on the few major functions you need: creating new items, deleting items and renaming them. The simple colors and smooth animations add up to the decent user experience."
-            },
-            "calculator": {
-                "title": "Calculator",
-                "description": "A simple calculator with all the basic operations you can think of. It's another rookie project but I had so much fun figuring many things while building this. With this project, I learned a lot about dealing with user's input to show the intended output."
-            },
-            "movieFight": {
-                "title": "Movie Fight",
-                "description": "This is one of the projects I built using a course. You can compare two movies/series and see which one does better in different stats according to the world's most popular IMDb movie database."
-            },
-            "natours": {
-                "title": "Natours",
-                "description": "Another course project that showed me the beauty and power of CSS. I learned how to use stunning effects and basically how to make things look great!"
-            },
-            "clipboard": {
-                "title": "Clipboard Landing Page",
-                "description": "A website I built with nothing but given mockup designs. A great front-end exercise from <a href=\"https://www.frontendmentor.io/\">Frontend Mentor</a>."
-            }
-        }
-    },
-    "contact": {
-        "labelName": "Your Name",
-        "labelEmail": "Your Email",
-        "labelSubject": "Subject",
-        "labelMessage": "Message",
-        "placeholderName": "Write your name",
-        "placeholderEmail": "Write your email",
-        "placeholderSubject": "Write the subject",
-        "placeholderMessage": "Hey, I'd like to work with you...",
-        "sendMessage": "Send Message"
+  "smws": {
+    "lang": "en"
+  },
+  "links": {
+    "aboutMe": "About me",
+    "myWork": "My work",
+    "contact": "Contact"
+  },
+  "about": {
+    "description": "<strong>I'm a 17 year old boy who's passionate about building websites and is in love with modern software development.</strong> I'm currently studying computer science in high school, but I'm mostly self-taught as I believe that one can learn really anything with so many available resources on the internet, these days!"
+  },
+  "hero": {
+    "name": "Hi, I'm Jakub.",
+    "profession": "A web developer."
+  },
+  "work": {
+    "about": "And those are some of my projects!",
+    "extra": "I have spent quite a decent amount of time working with <strong>back-end technologies</strong> like <strong>Node.js</strong> and <strong>MongoDB</strong> database. And I loooove <strong>competitive programming</strong>!",
+    "livePreview": "Live Preview",
+    "sourceCode": "Source Code",
+    "toolsUsed": "Tools used",
+    "showDetails": "Show Details",
+    "projects": {
+      "backitty": {
+        "title": "Backitty (backup manager)",
+        "description": "Robust school project where I applied my .NET skills to configure an API connected to a MySQL database. Subsequently, I designed the entire frontend and assembled it using the Angular framework. Additionally, I ensured access security using JWT token and session storage."
+      },
+      "js30": {
+        "title": "JavaScript 30",
+        "description": "Great free material led by <a href=\"https://wesbos.com/\">WesBos</a> for practical exercises in pure JavaScript. 30 projects in total. Utilization of various frontend events, introduction to APIs working with user web input such as speech recognition or webcam."
+      },
+      "todoList": {
+        "title": "To-do List",
+        "description": "This application lets you create your digital to-dos so you can easily keep track of the things you need to get done. It all works on the few major functions you need: creating new items, deleting items and renaming them. The simple colors and smooth animations add up to the decent user experience."
+      },
+      "calculator": {
+        "title": "Calculator",
+        "description": "A simple calculator with all the basic operations you can think of. It's another rookie project but I had so much fun figuring many things while building this. With this project, I learned a lot about dealing with user's input to show the intended output."
+      },
+      "movieFight": {
+        "title": "Movie Fight",
+        "description": "This is one of the projects I built using a course. You can compare two movies/series and see which one does better in different stats according to the world's most popular IMDb movie database."
+      },
+      "natours": {
+        "title": "Natours",
+        "description": "Another course project that showed me the beauty and power of CSS. I learned how to use stunning effects and basically how to make things look great!"
+      },
+      "clipboard": {
+        "title": "Clipboard Landing Page",
+        "description": "A website I built with nothing but given mockup designs. A great front-end exercise from <a href=\"https://www.frontendmentor.io/\">Frontend Mentor</a>."
+      },
+      "maze": {
+        "title": "Maze Game",
+        "description": "A simple graphical game in which the goal is to get the ball on the right path to the goal. The main focus of the project was to use the correct algorithm to generate a maze with a guaranteed path. I used the Matter.js library for simple 2D graphical elements and physics."
+      }
     }
+  },
+  "contact": {
+    "labelName": "Your Name",
+    "labelEmail": "Your Email",
+    "labelSubject": "Subject",
+    "labelMessage": "Message",
+    "placeholderName": "Write your name",
+    "placeholderEmail": "Write your email",
+    "placeholderSubject": "Write the subject",
+    "placeholderMessage": "Hey, I'd like to work with you...",
+    "sendMessage": "Send Message"
+  }
 }

@@ -63,6 +63,29 @@
         <div class="work__projects container-medium">
 
             <div class="work__project">
+                <h3 class="work__title heading-tertiary"><%= it.work.projects.backitty.title %></h3>
+                <div class="work__links">
+                    <a href="https://github.com/czechyoungcoder/backup-system" target="_blank" class="work__source-code"><%= it.work.sourceCode %></a>
+                </div>
+                <button class="work__button"><%= it.work.showDetails %> <i class="arrow"></i></button>
+                <div class="work__details">
+                    <p class="work__description"><%= it.work.projects.backitty.description %></p>
+                    <img
+                        class="work__image"
+                        alt="To-do list image showcase"
+                        srcset="
+                            backitty-170.png 170w,
+                            backitty-340.png 340w"
+                        sizes="(min-width: 40em) 340px, 170px"
+                        src="backitty-340.png" alt="Logo">        
+                    <div class="work__tools">
+                        <h4><%= it.work.toolsUsed %></h4>
+                        <p>Angular, Tailwind CSS, .NET Web API, MySQL</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work__project">
                 <h3 class="work__title heading-tertiary"><%= it.work.projects.todoList.title %></h3>
                 <div class="work__links">
                     <a href="https://czechcoder-todolist.netlify.app/" target="_blank" class="work__showcase"><%= it.work.livePreview %></a>
@@ -79,7 +102,7 @@
                             todo-list-170.png 170w,
                             todo-list-340.png 340w"
                         sizes="(min-width: 40em) 340px, 170px"
-                        src="340.png" alt="Logo">        
+                        src="todo-list-340.png" alt="Logo">        
                     <div class="work__tools">
                         <h4><%= it.work.toolsUsed %></h4>
                         <p>HTML, CSS, Web Storage API, JavaScript</p>
@@ -104,10 +127,33 @@
                             calculator-170.png 170w,
                             calculator-340.png 340w"
                         sizes="(min-width: 40em) 340px, 170px"
-                        src="340.png" alt="Logo">        
+                        src="calculator-340.png" alt="Logo">        
                     <div class="work__tools">
                         <h4><%= it.work.toolsUsed %></h4>
                         <p>HTML, CSS, RegExp, JavaScript</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work__project">
+                <h3 class="work__title heading-tertiary"><%= it.work.projects.js30.title %></h3>
+                <div class="work__links">
+                    <a href="https://github.com/wesbos/JavaScript30" target="_blank" class="work__source-code"><%= it.work.sourceCode %></a>
+                </div>
+                <button class="work__button"><%= it.work.showDetails %> <i class="arrow"></i></button>
+                <div class="work__details">
+                    <p class="work__description"><%~ it.work.projects.js30.description %></p>
+                    <img
+                        class="work__image"
+                        alt="JavaScript 30 image showcase"
+                        srcset="
+                            js30-170.png 170w,
+                            js30-340.png 340w"
+                        sizes="(min-width: 40em) 340px, 170px"
+                        src="js30-340.png" alt="Logo">        
+                    <div class="work__tools">
+                        <h4><%= it.work.toolsUsed %></h4>
+                        <p>HTML, CSS, JavaScript ES6, SpeechSynthesis, Webcam API</p>
                     </div>
                 </div>
             </div>
@@ -129,7 +175,7 @@
                             movie-fight-170.png 170w,
                             movie-fight-340.png 340w"
                         sizes="(min-width: 40em) 340px, 170px"
-                        src="340.png" alt="Logo">        
+                        src="movie-fight-340.png" alt="Logo">        
                     <div class="work__tools">
                         <h4><%= it.work.toolsUsed %></h4>
                         <p>HTML, <a href="https://bulma.io/">Bulma CSS</a>, JavaScript, Axios, <a href="http://www.omdbapi.com/">OMDb API</a></p>
@@ -154,10 +200,33 @@
                             natours-170.png 170w,
                             natours-340.png 340w"
                         sizes="(min-width: 40em) 340px, 170px"
-                        src="340.png" alt="Logo">        
+                        src="natours-340.png" alt="Logo">        
                     <div class="work__tools">
                         <h4><%= it.work.toolsUsed %></h4>
                         <p>HTML, CSS (SASS)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work__project">
+                <h3 class="work__title heading-tertiary"><%= it.work.projects.maze.title %></h3>
+                <div class="work__links">
+                    <a href="https://github.com/czechyoungcoder/Maze-Game" target="_blank" class="work__source-code"><%= it.work.sourceCode %></a>
+                </div>
+                <button class="work__button"><%= it.work.showDetails %> <i class="arrow"></i></button>
+                <div class="work__details">
+                    <p class="work__description"><%= it.work.projects.maze.description %></p>
+                    <img
+                        class="work__image"
+                        alt="Maze image showcase"
+                        srcset="
+                            maze-170.png 170w,
+                            maze-340.png 340w"
+                        sizes="(min-width: 40em) 340px, 170px"
+                        src="maze-340.png" alt="Logo">        
+                    <div class="work__tools">
+                        <h4><%= it.work.toolsUsed %></h4>
+                        <p>HTML, JavaScript, Matter.js</p>
                     </div>
                 </div>
             </div>
@@ -231,7 +300,7 @@
         <a href="https://www.linkedin.com/in/czechcoder" target="_blank" class="socials__icon"><i class="fa-brands fa-linkedin-in"></i></a>
         <a href="https://www.t.me/czechcoder" target="_blank" class="socials__icon"><i class="fa-brands fa-telegram"></i></a>
         <a href="https://www.instagram.com/czechcoder" target="_blank" class="socials__icon"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.twitter.com/czechcoder" target="_blank" class="socials__icon"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.x.com/czechcoder" target="_blank" class="socials__icon"><i class="fa-brands fa-x-twitter"></i></a>
     </section>
     
 <script src="/index.js"></script>

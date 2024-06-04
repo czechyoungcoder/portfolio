@@ -5,7 +5,8 @@
     display: none;
   }
 
-  1% {}
+  1% {
+  }
 
   100% {
     opacity: 1;
@@ -15,7 +16,6 @@
 }
 
 .work {
-
   @include breakpoint-down(small) {
     text-align: center;
   }
@@ -24,10 +24,10 @@
     color: lighten($primary-color, 30%);
   }
 
-  &__projects {}
+  &__projects {
+  }
 
   &__project {
-
     &:not(:last-child) {
       margin: 3rem 0 5rem;
     }
@@ -37,7 +37,7 @@
     padding-bottom: 3rem;
     border-radius: 1rem;
     position: relative;
-    transition: box-shadow .3s ease-out;
+    transition: box-shadow 0.3s ease-out;
 
     @include breakpoint-up(medium) {
       padding: 3rem 3.5rem 4rem;
@@ -46,17 +46,17 @@
       grid-template-areas:
         "title links"
         "details details"
-        "details details"
+        "details details";
     }
 
     &:hover {
-      box-shadow: 0 0 0.5rem .15rem rgba(lighten($primary-color, 10%), 0.6);
+      box-shadow: 0 0 0.5rem 0.15rem rgba(lighten($primary-color, 10%), 0.6);
     }
 
     &.open {
       .work__details {
         max-height: 70rem;
-        padding: 2.5rem 1rem .5rem;
+        padding: 2.5rem 1rem 0.5rem;
         opacity: 1;
 
         @include breakpoint-up(medium) {
@@ -84,39 +84,39 @@
     position: absolute;
     bottom: 0;
     left: 50%;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
     padding-right: 1rem;
     width: 11rem;
     transform: translate(-50%, 60%);
     font-family: inherit;
-    font-size: .7em;
+    font-size: 0.7em;
     font-weight: 600;
     text-transform: uppercase;
-    border-radius: .5em;
+    border-radius: 0.5em;
     border: none;
     cursor: pointer;
     color: $dark-blue;
     background: $yellow;
-    opacity: .95;
-    box-shadow: rgba($yellow, 0.1) 0px .3em 1em .1em;
-    transition: box-shadow .2s ease-in-out, opacity .2s ease-in-out;
+    opacity: 0.95;
+    box-shadow: rgba($yellow, 0.1) 0px 0.3em 1em 0.1em;
+    transition: box-shadow 0.2s ease-in-out, opacity 0.2s ease-in-out;
 
     .arrow {
       position: absolute;
-      right: .9em;
-      top: .8em;
+      right: 0.9em;
+      top: 0.8em;
       display: inline-block;
 
       padding: 3px;
       border: solid $dark-blue;
       border-width: 0 3px 3px 0;
-      transition: transform .5s ease-in-out;
+      transition: transform 0.5s ease-in-out;
       transform: rotate(45deg) translate(-1px, -1px);
     }
 
     &:hover,
     &:focus {
-      box-shadow: rgba($yellow, 0.2) 0px .35em 1.15em .1em;
+      box-shadow: rgba($yellow, 0.2) 0px 0.35em 1.15em 0.1em;
       opacity: 1;
 
       .arrow {
@@ -149,7 +149,7 @@
 
   &__showcase {
     color: $link-1;
-    transition: color .2s ease-in-out;
+    transition: color 0.2s ease-in-out;
 
     &:hover {
       color: lighten($link-1, 10%);
@@ -158,7 +158,7 @@
 
   &__source-code {
     color: $link-2;
-    transition: color .2s ease-in-out;
+    transition: color 0.2s ease-in-out;
 
     &:hover {
       color: lighten($link-2, 10%);
@@ -169,13 +169,14 @@
     display: inline-block;
     height: 1em;
     width: 2px;
-    background: rgba($white, .2);
-    margin: 0 .8rem;
+    background: rgba($white, 0.2);
+    margin: 0 0.8rem;
     position: relative;
   }
 
   &__details {
-    transition: max-height .8s ease-in-out 0s, padding .5s ease-in-out 0s, opacity .6s ease-in-out .1s;
+    transition: max-height 0.8s ease-in-out 0s, padding 0.5s ease-in-out 0s,
+      opacity 0.6s ease-in-out 0.1s;
     opacity: 0;
     max-height: 0;
     overflow: hidden;
@@ -186,7 +187,7 @@
       grid-gap: 2rem;
       grid-template-areas:
         "description image"
-        "tools image"
+        "tools image";
     }
   }
 
@@ -195,7 +196,7 @@
 
     a {
       color: #eee;
-      text-shadow: 0 0 .05em #eee;
+      text-shadow: 0 0 0.05em #eee;
 
       &:hover,
       &:active {
@@ -206,11 +207,10 @@
 
   &__image {
     grid-area: image;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     display: block;
     margin-left: auto;
     margin-left: right;
-
 
     @include breakpoint-down(medium) {
       margin: 3rem auto 2rem;
@@ -230,17 +230,19 @@
   }
 
   &__extra {
-    background: no-repeat linear-gradient(150deg, $primary-color, darken($primary-color, 15%));
-    border: .2em ridge $secondary-color;
+    background: no-repeat
+      linear-gradient(150deg, $primary-color, darken($primary-color, 15%));
+    border: 0.2em ridge $secondary-color;
     padding: 2rem 2rem 3rem;
     margin: 8rem auto 0;
     max-width: 50rem;
     text-align: center;
     border-radius: 1rem;
-    transition: box-shadow .25s ease-in-out;
+    transition: box-shadow 0.25s ease-in-out;
 
     &:hover {
-      box-shadow: rgba($secondary-color, 0.16) 0 1rem 3.6rem 0, rgba($primary-color, 0.06) 0 0 0 .1rem;
+      box-shadow: rgba($secondary-color, 0.16) 0 1rem 3.6rem 0,
+        rgba($primary-color, 0.06) 0 0 0 0.1rem;
     }
 
     .plus {

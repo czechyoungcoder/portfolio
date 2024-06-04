@@ -22,6 +22,14 @@
     "toolsUsed": "Použité nástroje",
     "showDetails": "Otevři detaily",
     "projects": {
+      "backitty": {
+        "title": "Backitty (zálohovač)",
+        "description": "Robustní školní projekt, ve kterém jsem aplikoval znalosti .NET v rámci konfigurace API napojené na MySQL databázi. Nato jsem designově navrhl veškerý frontend a poté jej sestavil v Angular frameworku. Zároveň jsem ošetřil přístup pomocí JWT tokenu a ukládání sessiony."
+      },
+      "js30": {
+        "title": "JavaScript 30",
+        "description": "Super bezplatný materiál vedený <a href=\"https://wesbos.com/\">WesBosem</a> na praktické procvičení čistého JS. Celkem 30 projektů. Užití všemožných eventů na frontendu, seznámení s API pracujícím s webovým vstupem uživatele jako je rozpoznávání řeči nebo webkamera."
+      },
       "todoList": {
         "title": "To-do Seznam",
         "description": "S touto aplikací si můžeš vytvářet svůj vlastní to-do seznam (seznam věcí, které chceš udělat). Vše funguje na těch nejzákladnějších funkcí, které potřebuješ: přidávání nových položek, odstranění položek a jejich přejmenování. Jednoduchý design a plynulé animace doplňují konečný uživatelský prožitek."
@@ -41,6 +49,10 @@
       "clipboard": {
         "title": "Clipboard Landing Page",
         "description": "Stránka, kterou jsem vytvořil pouze se zadaným mockup designem. Skvělé front-end cvičení ze stránky <a href=\"https://www.frontendmentor.io/\">Frontend Mentor</a>."
+      },
+      "maze": {
+        "title": "Bludiště",
+        "description": "Jednoduchá grafická hra, ve které je cílem vydat se s kuličkou správnou cestou k cíli. Hlavní náplní projektu bylo využít správně algoritmus na generování bludiště s garantovanou cestou. Pro jednoduchou práci s 2D grafickými elementy a fyziku jsem využil knihovnu Matter.js."
       }
     }
   },
