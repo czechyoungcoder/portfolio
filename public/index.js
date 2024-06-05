@@ -63,7 +63,7 @@ const form = document.getElementById("contact-form");
 const submitMessage = document.getElementById("submit-message");
 
 const sendMail = (mail) => {
-  fetch("http://localhost:3000/send", {
+  fetch("https://czechcoder.com/send", {
     method: "post",
     body: mail,
   })
